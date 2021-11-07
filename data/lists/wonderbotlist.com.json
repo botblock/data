@@ -1,0 +1,28 @@
+{
+    "id": "wonderbotlist.com",
+    "added": 1533208489,
+    "name": "Wonder Bot List",
+    "url": "https://wonderbotlist.com",
+    "icon": "https://cdn.discordapp.com/icons/501017909389295616/b612c45b809314e5e362dd8fa87bb3ac.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 0,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": "https://api.wonderbotlist.com/en/",
+    "api_post": "https://api.wonderbotlist.com/v1/bot/:id",
+    "api_field": "serveurs",
+    "api_shard_id": null,
+    "api_shard_count": "shards",
+    "api_shards": null,
+    "api_get": "https://api.wonderbotlist.com/v1/bot/:id",
+    "api_all": null,
+    "view_bot": "https://wonderbotlist.com/en/bot/:id",
+    "bot_widget": null,
+    "content": null,
+    "owners": "Ten-No-Kami-Sama#7777 (193090359700619264), `${DoctaEnkoda++}`#2311 (160868823887511552), NaelleOwska#1786 (359767845762236436)",
+    "discord": "https://discord.gg/yaS9krd",
+    "features": [
+        "has-mobile-support"
+    ]
+}

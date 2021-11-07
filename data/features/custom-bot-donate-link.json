@@ -1,0 +1,7 @@
+{
+    "name": "Custom Bot Donate Link",
+    "id": "custom-bot-donate-link",
+    "display": 3,
+    "type": 0,
+    "description": "Site has an option to add a custom donation link for the bot."
+}

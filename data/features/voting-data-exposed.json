@@ -1,0 +1,7 @@
+{
+    "name": "Voting Data Exposed",
+    "id": "voting-data-exposed",
+    "display": 2,
+    "type": 1,
+    "description": "Site allows others to lookup vote data of a bot (e.g. through an API endpoint)."
+}

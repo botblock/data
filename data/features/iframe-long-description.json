@@ -1,0 +1,7 @@
+{
+    "name": "Iframe Long Description",
+    "id": "iframe-long-description",
+    "display": 4,
+    "type": 0,
+    "description": "Site supports iframes in the bot's long description."
+}

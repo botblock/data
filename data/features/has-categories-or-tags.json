@@ -1,0 +1,7 @@
+{
+    "name": "Has Categories or Tags",
+    "id": "has-categories-or-tags",
+    "display": 0,
+    "type": 0,
+    "description": "Site offers categories or tags that can be added to a bot."
+}

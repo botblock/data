@@ -1,0 +1,33 @@
+{
+    "id": "discordbots.app",
+    "added": 1604962085,
+    "name": "Discord Bots App",
+    "url": "https://discordbots.app/",
+    "icon": "https://discordbots.app/logo.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 0,
+    "discord_only": 1,
+    "description": "Browse through thousands of Discord Bots from your phone! Download now on the Google Play Store and Apple App Store.",
+    "api_docs": null,
+    "api_post": null,
+    "api_field": null,
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": null,
+    "api_all": null,
+    "view_bot": " https://discordbots.app/bot/:id",
+    "bot_widget": null,
+    "content": null,
+    "owners": "Tetracyl#0001 (275831434772742144)",
+    "discord": "https://discord.gg/Hznh8f5",
+    "features": [
+        "has-ads-on-site",
+        "custom-bot-invite-link",
+        "custom-bot-website-link",
+        "discord-bot-support-link",
+        "has-categories-or-tags",
+        "has-search"
+    ]
+}

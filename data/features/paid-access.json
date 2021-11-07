@@ -1,0 +1,7 @@
+{
+    "name": "Paid Access",
+    "id": "paid-access",
+    "display": 5,
+    "type": 1,
+    "description": "You have to pay in order to gain access to the site and its API."
+}

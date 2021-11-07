@@ -1,0 +1,7 @@
+{
+    "name": "Custom Bot Support Link",
+    "id": "custom-bot-support-link",
+    "display": 3,
+    "type": 0,
+    "description": "Site has an option to add a custom support link for the bot."
+}

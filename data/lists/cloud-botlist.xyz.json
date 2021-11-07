@@ -1,0 +1,33 @@
+{
+    "id": "cloud-botlist.xyz",
+    "added": 1577741636,
+    "name": "Cloud Botlist",
+    "url": "https://cloud-botlist.xyz/",
+    "icon": "https://cdn.discordapp.com/icons/596854473167470594/2fcb2834c99643f3204f5da820934cfa.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 1,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": "https://apollos.gitbook.io/cloud-botlist/",
+    "api_post": "https://cloud-botlist.xyz/api/bots/:id",
+    "api_field": "guilds",
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": "https://cloud-botlist.xyz/api/bots/:id",
+    "api_all": null,
+    "view_bot": "https://cloud-botlist.xyz/bots/:id",
+    "bot_widget": null,
+    "content": null,
+    "owners": "R C N #0001 (188418994527535104)",
+    "discord": "https://discord.gg/u3NG7pp",
+    "features": [
+        "markdown-long-description",
+        "custom-bot-github-link",
+        "custom-bot-website-link",
+        "discord-bot-support-link",
+        "voting-data-exposed",
+        "additional-bot-owners-editors"
+    ]
+}

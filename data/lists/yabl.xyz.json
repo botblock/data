@@ -1,0 +1,32 @@
+{
+    "id": "yabl.xyz",
+    "added": 1564607076,
+    "name": "Yet Another Bot List",
+    "url": "https://yabl.xyz/",
+    "icon": "https://i.imgur.com/OFiMern.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 0,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": "https://yabl.xyz/api",
+    "api_post": "https://yabl.xyz/api/bot/:id/stats",
+    "api_field": "guildCount",
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": "https://yabl.xyz/api/bot/:id",
+    "api_all": "https://yabl.xyz/api/bots/all",
+    "view_bot": "https://yabl.xyz/bot/:id",
+    "bot_widget": null,
+    "content": null,
+    "owners": "! craftxbox#4738 (153353572711530496), ry00001#3487 (190544080164487168)",
+    "discord": "https://discord.gg/vXeUnzZ",
+    "features": [
+        "markdown-long-description",
+        "custom-bot-github-link",
+        "custom-bot-support-link",
+        "custom-bot-website-link",
+        "discord-bot-support-link"
+    ]
+}

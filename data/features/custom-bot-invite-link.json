@@ -1,0 +1,7 @@
+{
+    "name": "Custom Bot Invite Link",
+    "id": "custom-bot-invite-link",
+    "display": 3,
+    "type": 0,
+    "description": "Site has an option to add a custom invite link for the bot."
+}

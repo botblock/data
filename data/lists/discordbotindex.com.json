@@ -1,0 +1,33 @@
+{
+    "id": "discordbotindex.com",
+    "added": 1539030775,
+    "name": "Discord Bot Index",
+    "url": "https://discordbotindex.com/",
+    "icon": "https://cdn.discordapp.com/icons/482922868410417163/bcb70a74c152d82021a9421d55bc3ec3.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 1,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": "https://discordbotindex.com/documentation",
+    "api_post": "https://discordbotindex.com/apiv1/bot/:id",
+    "api_field": "server_count",
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": "https://discordbotindex.com/apiv1/bot/:id",
+    "api_all": null,
+    "view_bot": "https://discordbotindex.com/bot/:id",
+    "bot_widget": null,
+    "content": "This list has shut down and been merged into discord.boats",
+    "owners": "LiquidBlast, SamuraiStacks#5873 (439373663905513473), Kirb#0001 (303943082108518400), ohlookitsderpy#3939 (145557815287611393), ðŸŽ€ QuantumCat ðŸŽ€#2107 (130769947583447040)",
+    "discord": "https://discord.gg/9jkAUF3",
+    "features": [
+        "custom-bot-github-link",
+        "custom-bot-support-link",
+        "custom-bot-website-link",
+        "discord-bot-support-link",
+        "voting-data-exposed",
+        "has-mobile-support"
+    ]
+}

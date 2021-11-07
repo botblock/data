@@ -1,0 +1,33 @@
+{
+    "id": "discordbots.co.uk",
+    "added": 1532965633,
+    "name": "Discord Fork",
+    "url": "https://discordbots.co.uk/",
+    "icon": "https://discordbots.co.uk/assets/images/logo/logo256.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 1,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": "https://discordbots.co.uk/docs/api-reference",
+    "api_post": null,
+    "api_field": null,
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": "https://discordbots.co.uk/api/bots/:id.json",
+    "api_all": null,
+    "view_bot": "https://discordbots.co.uk/bots/:id",
+    "bot_widget": "https://discordbots.co.uk/api/bots/:id.svg",
+    "content": null,
+    "owners": "7coil#3175 (190519304972664832), AlexFlipnote#0001 (86477779717066752)",
+    "discord": "https://discord.gg/8uC6aKZ",
+    "features": [
+        "markdown-long-description",
+        "custom-bot-github-link",
+        "custom-bot-invite-link",
+        "custom-bot-support-link",
+        "discord-bot-support-link",
+        "vanity-urls-for-all"
+    ]
+}

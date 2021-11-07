@@ -1,0 +1,29 @@
+{
+    "id": "carbonitex.net",
+    "added": 1532965633,
+    "name": "Carbonitex",
+    "url": "https://www.carbonitex.net/discord/bots",
+    "icon": "https://cdn.discordapp.com/icons/112319935652298752/633a48b3446045ceed222a32622a9dbd.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 0,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": null,
+    "api_post": null,
+    "api_field": null,
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": null,
+    "api_all": null,
+    "view_bot": null,
+    "bot_widget": null,
+    "content": null,
+    "owners": "Carbonitex [Matt]#0001 (68396159596503040), jet#9999 (228290260239515649)",
+    "discord": "https://discord.gg/J2evbZB",
+    "features": [
+        "additional-bot-owners-editors",
+        "has-mobile-support"
+    ]
+}

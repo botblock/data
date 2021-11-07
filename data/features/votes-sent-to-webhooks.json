@@ -1,0 +1,7 @@
+{
+    "name": "Votes sent to Webhooks",
+    "id": "votes-sent-to-webhooks",
+    "display": 2,
+    "type": 1,
+    "description": "Site sends votes through Webhooks."
+}

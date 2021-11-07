@@ -1,0 +1,33 @@
+{
+    "id": "discordmusicbots.com",
+    "added": 1533208489,
+    "name": "Discord Music Bots",
+    "url": "https://www.discordmusicbots.com/",
+    "icon": "https://www.discordmusicbots.com/logo.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 1,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": null,
+    "api_post": null,
+    "api_field": null,
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": null,
+    "api_all": null,
+    "view_bot": null,
+    "bot_widget": null,
+    "content": "This list appears to be offline and no longer active.",
+    "owners": "spong#3338 (87164639695110144)",
+    "discord": null,
+    "features": [
+        "custom-bot-invite-link",
+        "custom-bot-support-link",
+        "custom-bot-website-link",
+        "discord-bot-support-link",
+        "has-categories-or-tags",
+        "has-mobile-support"
+    ]
+}

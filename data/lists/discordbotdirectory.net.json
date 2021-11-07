@@ -1,0 +1,32 @@
+{
+    "id": "discordbotdirectory.net",
+    "added": 1602022529,
+    "name": "Discord Bot Directory",
+    "url": "https://discordbotdirectory.net/",
+    "icon": "https://i.imgur.com/0tVmXGH.jpg",
+    "language": "English",
+    "display": 1,
+    "defunct": 1,
+    "discord_only": 1,
+    "description": "Advertise your very own Discord bot to users worldwide!",
+    "api_docs": null,
+    "api_post": null,
+    "api_field": null,
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": "https://discordbotdirectory.net/bots/:id",
+    "api_all": null,
+    "view_bot": null,
+    "bot_widget": "https://discordbotdirectory.net/api/embed/:id",
+    "content": null,
+    "owners": "TheRealPikachuYT#0146 [604661101577371648] + Shoot.Dot#0992 (746939269750456320), BLUE#6670 (675469094991953940)",
+    "discord": "https://discord.gg/xTWtZxN",
+    "features": [
+        "html-long-description",
+        "markdown-long-description",
+        "has-search",
+        "requires-owner-in-server",
+        "server-count-api"
+    ]
+}

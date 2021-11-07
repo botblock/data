@@ -1,0 +1,30 @@
+{
+    "id": "discordbotlist.xyz",
+    "added": 1535900109,
+    "name": "Discord Bot List",
+    "url": "https://discordbotlist.xyz/",
+    "icon": "https://cdn.discordapp.com/icons/477792727577395210/56f3ce1fab0a93db5d8366a442206f94.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 1,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": "https://discordbotlist.xyz/api/docs",
+    "api_post": "https://discordbotlist.xyz/api/stats/:id",
+    "api_field": "count",
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": "https://discordbotlist.xyz/api/bot?id=:id",
+    "api_all": null,
+    "view_bot": "https://discordbotlist.xyz/bots/:id/",
+    "bot_widget": "https://discordbotlist.xyz/api/embed/:id",
+    "content": "The owner of this bot list has been banned from Discord for mass advertising through their bot and the bot list server has been deleted",
+    "owners": "Ankrad#0597 (297403616468140032)",
+    "discord": "https://discord.gg/PA9EYba",
+    "features": [
+        "markdown-long-description",
+        "custom-bot-invite-link",
+        "has-mobile-support"
+    ]
+}

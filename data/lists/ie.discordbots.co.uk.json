@@ -1,0 +1,30 @@
+{
+    "id": "ie.discordbots.co.uk",
+    "added": 1544548984,
+    "name": "Discord Fork for Internet Explorer 6",
+    "url": "http://ie.discordbots.co.uk/",
+    "icon": "https://cdn.discordapp.com/icons/330777295952543744/29bdc1cebfd41de2db5e615ffb86bece.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 1,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": null,
+    "api_post": null,
+    "api_field": null,
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": null,
+    "api_all": null,
+    "view_bot": null,
+    "bot_widget": null,
+    "content": null,
+    "owners": "7coil#3175 (190519304972664832)",
+    "discord": "https://discord.gg/8uC6aKZ",
+    "features": [
+        "custom-bot-github-link",
+        "custom-bot-invite-link",
+        "has-mobile-support"
+    ]
+}

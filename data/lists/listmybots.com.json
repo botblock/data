@@ -1,0 +1,33 @@
+{
+    "id": "listmybots.com",
+    "added": 1581886764,
+    "name": "ListMyBots",
+    "url": "https://listmybots.com/",
+    "icon": "https://cdn.discordapp.com/attachments/581452385596080128/581945277435478026/listmybots2.png",
+    "language": "English",
+    "display": 0,
+    "defunct": 0,
+    "discord_only": 1,
+    "description": "The bot list that accepts in 24 hours",
+    "api_docs": null,
+    "api_post": null,
+    "api_field": null,
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": null,
+    "api_all": null,
+    "view_bot": "https://listmybots.com/bot/:id",
+    "bot_widget": null,
+    "content": "This list is a known clone of Bots for Discord. Owner(s) have been made aware and are working to rectify this.",
+    "owners": "DamonOnYT#5465 (200511039622742016), AxeI#2130 (208990011163541504), The Devil In I#1762 (274679936067829760)",
+    "discord": "https://discord.gg/8mBnFhh",
+    "features": [
+        "markdown-long-description",
+        "custom-bot-github-link",
+        "custom-bot-invite-link",
+        "custom-bot-support-link",
+        "custom-bot-website-link",
+        "has-mobile-support"
+    ]
+}

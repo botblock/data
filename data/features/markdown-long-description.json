@@ -1,0 +1,7 @@
+{
+    "name": "Markdown Long Description",
+    "id": "markdown-long-description",
+    "display": 4,
+    "type": 0,
+    "description": "Site supports Markdown in the bot's long description."
+}

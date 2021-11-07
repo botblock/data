@@ -1,0 +1,32 @@
+{
+    "id": "listcord.com",
+    "added": 1532965633,
+    "name": "Listcord",
+    "url": "https://listcord.com/",
+    "icon": "https://cdn.discordapp.com/icons/692858882153775164/2a6fac8a8090bc3b9e4f490ba978bf93.png",
+    "language": "English",
+    "display": 0,
+    "defunct": 0,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": null,
+    "api_post": null,
+    "api_field": null,
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": null,
+    "api_all": null,
+    "view_bot": null,
+    "bot_widget": null,
+    "content": "Owner: \"This project is currently paused due to changes in my personal life and to prioritize other projects of mine. Please understand this decision, and know that I will eventually get back to this.\", site redirects to Discord sercer",
+    "owners": "chewy#0001 (219592873228763147)",
+    "discord": "https://discord.gg/f3dwWxf",
+    "features": [
+        "custom-bot-invite-link",
+        "custom-bot-website-link",
+        "discord-bot-support-link",
+        "voting-data-exposed",
+        "additional-bot-owners-editors"
+    ]
+}

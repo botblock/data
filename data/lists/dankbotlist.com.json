@@ -1,0 +1,28 @@
+{
+    "id": "dankbotlist.com",
+    "added": 1535201716,
+    "name": "Dank Bot List",
+    "url": "https://dankbotlist.com/",
+    "icon": "https://cdn.discordapp.com/icons/402400730922876928/ba5c7c4a49918e012363430a9b2e26e3.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 1,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": null,
+    "api_post": null,
+    "api_field": null,
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": null,
+    "api_all": null,
+    "view_bot": null,
+    "bot_widget": null,
+    "content": null,
+    "owners": "Cory#7650 (303391020622544909)",
+    "discord": "https://discord.gg/3EE9gpK",
+    "features": [
+        "has-mobile-support"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Offers Paid Promotion",
+    "id": "offers-paid-promotion",
+    "display": 5,
+    "type": 1,
+    "description": "Site offers a way to promote a bot through payment (e.g. paid slots on frontpage)."
+}

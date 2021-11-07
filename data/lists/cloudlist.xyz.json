@@ -1,0 +1,31 @@
+{
+    "id": "cloudlist.xyz",
+    "added": 1580752411,
+    "name": "Cloud List",
+    "url": "https://www.cloudlist.xyz/",
+    "icon": "https://cdn.discordapp.com/icons/603194252872122389/58dd5ff6609dff550c25e83b7cd167ac.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 1,
+    "discord_only": 1,
+    "description": "Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users.",
+    "api_docs": "https://www.cloudlist.xyz/apidocs",
+    "api_post": "https://www.cloudlist.xyz/api/stats/:id",
+    "api_field": "count",
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": "https://www.cloudlist.xyz/api/bot/:id",
+    "api_all": null,
+    "view_bot": "https://www.cloudlist.xyz/bots/:id",
+    "bot_widget": null,
+    "content": null,
+    "owners": "Bruninho#9205 (463696108766494730)",
+    "discord": "http://discord.gg/PsPfh6m",
+    "features": [
+        "markdown-long-description",
+        "custom-bot-website-link",
+        "voting-data-exposed",
+        "has-categories-or-tags"
+    ]
+}

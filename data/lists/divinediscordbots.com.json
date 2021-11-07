@@ -1,0 +1,33 @@
+{
+    "id": "divinediscordbots.com",
+    "added": 1535359770,
+    "name": "Divine Discord Bot List",
+    "url": "https://divinediscordbots.com/",
+    "icon": "https://cdn.discordapp.com/icons/454933217666007052/356f5af1a139c8d6dd9348254ac8854a.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 1,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": "https://divinediscordbots.com/api",
+    "api_post": "https://divinediscordbots.com/bot/:id/stats",
+    "api_field": "server_count",
+    "api_shard_id": null,
+    "api_shard_count": "shards",
+    "api_shards": null,
+    "api_get": "https://divinediscordbots.com/bot/:id/stats",
+    "api_all": null,
+    "view_bot": "https://divinediscordbots.com/bot/:id",
+    "bot_widget": "https://divinediscordbots.com/api/widget/:id.svg",
+    "content": null,
+    "owners": "Sworder#0001 (240508683455299584), Samuel || TutoRapide#1868 (137569112556699649)",
+    "discord": "https://discord.gg/8b2YahE",
+    "features": [
+        "markdown-long-description",
+        "custom-bot-invite-link",
+        "vanity-urls-for-all",
+        "voting-data-exposed",
+        "additional-bot-owners-editors",
+        "has-mobile-support"
+    ]
+}

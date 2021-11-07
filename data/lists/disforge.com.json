@@ -1,0 +1,33 @@
+{
+    "id": "disforge.com",
+    "added": 1601751697,
+    "name": "Disforge",
+    "url": "https://disforge.com/bots",
+    "icon": "https://i.imgur.com/KvRWNYj.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 0,
+    "discord_only": 1,
+    "description": "Explore thousands of Discord servers & Bots on Disforge.",
+    "api_docs": "https://disforge.com/developer",
+    "api_post": "https://disforge.com/api/botstats/:id",
+    "api_field": "servers",
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": null,
+    "api_all": null,
+    "view_bot": null,
+    "bot_widget": null,
+    "content": null,
+    "owners": "Kohai#0001 (116218776495587329)",
+    "discord": "https://discord.gg/emojis",
+    "features": [
+        "custom-bot-support-link",
+        "vanity-urls-for-all",
+        "has-categories-or-tags",
+        "has-mobile-support",
+        "has-search",
+        "server-count-api"
+    ]
+}

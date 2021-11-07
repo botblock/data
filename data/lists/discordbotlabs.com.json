@@ -1,0 +1,33 @@
+{
+    "id": "discordbotlabs.com",
+    "added": 1541603836,
+    "name": "Discord Bot Labs",
+    "url": "https://discordbotlabs.com/",
+    "icon": "https://cdn.discordapp.com/icons/481702435644112906/57d7a0a85a4191e6741ebae4f9d122ab.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 1,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": "https://discordbotlabs.com/api/docs",
+    "api_post": null,
+    "api_field": null,
+    "api_shard_id": null,
+    "api_shard_count": null,
+    "api_shards": null,
+    "api_get": "https://discordbotlabs.com/api/bots/:id",
+    "api_all": null,
+    "view_bot": "https://discordbotlabs.com/bots/:id",
+    "bot_widget": null,
+    "content": "This list has been shutdown by the owner.",
+    "owners": "ThatTonybo#0001 (296044953576931328)",
+    "discord": "https://discord.gg/jkvVxtx",
+    "features": [
+        "markdown-long-description",
+        "custom-bot-invite-link",
+        "custom-bot-support-link",
+        "discord-bot-support-link",
+        "has-categories-or-tags",
+        "has-mobile-support"
+    ]
+}

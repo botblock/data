@@ -1,0 +1,31 @@
+{
+    "id": "glennbotlist.xyz",
+    "added": 1577741047,
+    "name": "Glenn Bot List",
+    "url": "https://glennbotlist.xyz",
+    "icon": "https://cdn.discordapp.com/icons/623600255987875870/a_fdb1896f4a9e2b1d1ab74b6e1eadad7b.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 1,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": "https://docs.glennbotlist.xyz/",
+    "api_post": "https://glennbotlist.xyz/api/bot/:id/stats",
+    "api_field": "serverCount",
+    "api_shard_id": null,
+    "api_shard_count": "shardCount",
+    "api_shards": null,
+    "api_get": null,
+    "api_all": null,
+    "view_bot": "https://glennbotlist.xyz/bot/:id",
+    "bot_widget": null,
+    "content": null,
+    "owners": "Jack Glenn#0806 (259649217255964672), DieselJS#1689 (414713250832449536)",
+    "discord": "https://discord.gg/QeaNNRW",
+    "features": [
+        "custom-bot-github-link",
+        "custom-bot-website-link",
+        "additional-bot-owners-editors",
+        "has-categories-or-tags"
+    ]
+}

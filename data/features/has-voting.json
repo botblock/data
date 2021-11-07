@@ -1,0 +1,7 @@
+{
+    "name": "Has Voting",
+    "id": "has-voting",
+    "display": 2,
+    "type": 0,
+    "description": "Site offers a way to vote for a bot."
+}

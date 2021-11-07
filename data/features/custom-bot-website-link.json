@@ -1,0 +1,7 @@
+{
+    "name": "Custom Bot Website Link",
+    "id": "custom-bot-website-link",
+    "display": 3,
+    "type": 0,
+    "description": "Site has an option to add a custom website link for the bot."
+}

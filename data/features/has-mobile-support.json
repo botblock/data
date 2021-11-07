@@ -1,0 +1,7 @@
+{
+    "name": "Has Mobile Support",
+    "id": "has-mobile-support",
+    "display": 0,
+    "type": 0,
+    "description": "Site is mobile friendly (Can be used on smartphones/tablets)."
+}
