@@ -12,7 +12,10 @@ paths:
   /api/count:
     post:
       summary: Update guild count
-      description: The `POST /api/count` endpoint of the BotBlock API is the core endpoint that bots and libraries integrate with, allowing a bot to make a single POST call to send their guild count to all supported lists, based on the API keys passed for lists.
+      description: |
+        The `POST /api/count` endpoint of the BotBlock API is the core endpoint that bots and libraries integrate with, allowing a bot to make a single POST call to send their guild count to all supported lists, based on the API keys passed for lists.
+
+        _Note: This ratelimit has a 1 / 120s ratelimit for successful requests. Requests that return a 400 or 429 status code are not ratelimited._
       requestBody:
         required: true
         content:
@@ -91,9 +94,9 @@ paths:
                 type: object
                 properties:
                   success:
+                    description: Properties for each list that returned a successful response.
                     type: object
                     additionalProperties:
-                      description: Properties for each list that returned a successful response.
                       type: array
                       minItems: 3
                       maxItems: 3
@@ -103,9 +106,9 @@ paths:
                           - type: string
                           - type: integer
                   failure:
+                    description: Properties for each list that returned a failure response.
                     type: object
                     additionalProperties:
-                      description: Properties for each list that returned a failure response.
                       type: array
                       minItems: 3
                       maxItems: 3
@@ -162,34 +165,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  error:
-                    type: boolean
-                    enum:
-                      - true
-                  status:
-                    type: integer
-                    enum:
-                      - 429
-                  retry_after:
-                    description: How many seconds until the API can be used again.
-                    type: integer
-                  ratelimit_reset:
-                    description: The unix timestamp when the API can be used again.
-                    type: integer
-                  ratelimit_method:
-                    description: Ratelimit scope - the HTTP method.
-                    type: string
-                  ratelimit_route:
-                    description: Ratelimit scope - the API route.
-                    type: string
-                  ratelimit_ip:
-                    description: Ratelimit scope - the requesting IP address.
-                    type: string
-                  ratelimit_bot_id:
-                    description: Ratelimit scope - the provided bot ID.
-                    type: string
+                $ref: "#/components/schemas/Ratelimit"
               examples:
                 bot:
                   value:
@@ -202,27 +178,239 @@ paths:
                     ratelimit_ip: 12.45.67.89
                     ratelimit_bot_id: "123456789123456789"
           headers:
-            Retry-After:
-              description: How many seconds until the API can be used again.
+            $ref: "#/components/headers/Ratelimit"
+
+  /api/bots/{id}:
+    get:
+      summary: Get bot information
+      description: |
+        Fetch aggregated information about a Discord bot based on data returned by bot lists that BotBlock tracks that support getting bot information.
+
+        _Note: This ratelimit has a 1 / 30s ratelimit for successful requests. Requests that return a 400 or 429 status code are not ratelimited._
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+            format: snowflake
+          required: true
+          description: Discord bot ID to fetch
+
+      responses:
+        "200":
+          description: Guild count forwarded to provided lists.
+          content:
+            application/json:
               schema:
-                type: integer
-            X-Rate-Limit-Reset:
-              description: The unix timestamp when the API can be used again.
+                type: object
+                properties:
+                  id:
+                    description: The ID of the bot being fetched.
+                    type: string
+                    format: snowflake
+                  username:
+                    description: |
+                      The username of the bot fetched.
+
+                      _Note: Based on the most common value returned from list data, defaults to `Unknown`._
+                    type: string
+                  discriminator:
+                    description: |
+                      The discriminator of the bot fetched.
+
+                      _Note: Based on the most common value returned from list data, defaults to `0000`._
+                    type: string
+                  owners:
+                    description: The IDs of all known owners of the bot.
+                    type: array
+                    items:
+                      type: string
+                      format: snowflake
+                  server_count:
+                    description: |
+                      The server/guild count for the bot.
+
+                      _Note: Based on the maximum value returned from list data, defaults to `0`._
+                    type: integer
+                  invite:
+                    description: |
+                      The invite URL for the bot (Discord or custom), if known.
+
+                      _Note: Based on the most common value returned from list data, defaults to an empty string._
+                    type: string
+                  prefix:
+                    description: |
+                      The command prefix for the bot, if known.
+
+                      _Note: Based on the most common value returned from list data, defaults to an empty string._
+                    type: string
+                  website:
+                    description: |
+                      The website link for the bot, if known.
+
+                      _Note: Based on the most common value returned from list data, defaults to an empty string._
+                    type: string
+                  github:
+                    description: |
+                      The open-source GitHub URL for the bot, if known.
+
+                      _Note: Based on the most common value returned from list data, defaults to an empty string._
+                    type: string
+                  support:
+                    description: |
+                      The support link for the bot (Discord or custom), if known.
+
+                      _Note: Based on the most common value returned from list data, defaults to an empty string._
+                    type: string
+                  library:
+                    description: |
+                      The library/language the bot was developed in, if known.
+
+                      _Note: Based on the most common value returned from list data, defaults to an empty string._
+                    type: string
+                  list_data:
+                    description: Response from each BotBlock-tracked list that has a endpoint for fetching bot information.
+                    type: object
+                    additionalProperties:
+                      type: array
+                      minItems: 2
+                      maxItems: 2
+                      items:
+                        description: Data response from the list (parsed JSON, or raw text respose), followed by the integer response status code.
+                        oneOf:
+                          - $ref: '#/components/schemas/AnyJSON'
+                          - type: integer
+              examples:
+                bot:
+                  value:
+                    id: "123456789123456789"
+                    username: My Bot
+                    discriminator: "1234"
+                    owners:
+                      - "123456789123456789"
+                    server_count: 10000
+                    invite: https://discord.com/oauth2/authorize?client_id=123456789123456789&scope=bot
+                    prefix: "!"
+                    website: https://my-bot.com/
+                    github: https://github.com/hello/my-bot
+                    support: https://discord.gg/discord-developers
+                    library: discord.js
+                    list_data:
+                      thelist.org:
+                        - bot_id: "123456789123456789"
+                          ...: ...
+                        - 200
+                      listofbots.com:
+                        - bot:
+                            id: "123456789123456789"
+                            guilds: 10000
+                            ...: ...
+                        - 200
+                      otherlist.xyz:
+                        - Bot not found
+                        - 404
+
+        "400":
+          description: Request validation failed.
+          content:
+            application/json:
               schema:
-                type: integer
-            X-Rate-Limit-Method:
-              description: Ratelimit scope - the HTTP method.
+                type: object
+                properties:
+                  error:
+                    type: boolean
+                    enum:
+                      - true
+                  status:
+                    type: integer
+                    enum:
+                      - 400
+                  message:
+                    description: An error message explaining why request validation failed.
+                    type: string
+              examples:
+                bot:
+                  value:
+                    error: true
+                    status: 400
+                    message: "'id' must be a snowflake"
+
+        "429":
+          description: Request ratelimited.
+          content:
+            application/json:
               schema:
-                type: string
-            X-Rate-Limit-Route:
-              description: Ratelimit scope - the API route.
-              schema:
-                type: string
-            X-Rate-Limit-IP:
-              description: Ratelimit scope - the requesting IP address.
-              schema:
-                type: string
-            X-Rate-Limit-Bot-ID:
-              description: Ratelimit scope - the provided bot ID.
-              schema:
-                type: string
+                $ref: "#/components/schemas/Ratelimit"
+              examples:
+                bot:
+                  value:
+                    error: true
+                    status: 429
+                    retry_after: 80
+                    ratelimit_reset: 1609459320
+                    ratelimit_method: GET
+                    ratelimit_route: /api/bots/123456789123456789
+                    ratelimit_ip: 12.45.67.89
+                    ratelimit_bot_id: "123456789123456789"
+          headers:
+            $ref: "#/components/headers/Ratelimit"
+
+components:
+  schemas:
+    AnyJSON:
+      description: Can be any JSON-able value - string, number, boolean, array or object.
+    Ratelimit:
+      type: object
+      properties:
+        error:
+          type: boolean
+          enum:
+            - true
+        status:
+          type: integer
+          enum:
+            - 429
+        retry_after:
+          description: How many seconds until the API can be used again.
+          type: integer
+        ratelimit_reset:
+          description: The unix timestamp when the API can be used again.
+          type: integer
+        ratelimit_method:
+          description: Ratelimit scope - the HTTP method.
+          type: string
+        ratelimit_route:
+          description: Ratelimit scope - the API route.
+          type: string
+        ratelimit_ip:
+          description: Ratelimit scope - the requesting IP address.
+          type: string
+        ratelimit_bot_id:
+          description: Ratelimit scope - the provided bot ID.
+          type: string
+  headers:
+    Ratelimit:
+      Retry-After:
+        description: How many seconds until the API can be used again.
+        schema:
+          type: integer
+      X-Rate-Limit-Reset:
+        description: The unix timestamp when the API can be used again.
+        schema:
+          type: integer
+      X-Rate-Limit-Method:
+        description: Ratelimit scope - the HTTP method.
+        schema:
+          type: string
+      X-Rate-Limit-Route:
+        description: Ratelimit scope - the API route.
+        schema:
+          type: string
+      X-Rate-Limit-IP:
+        description: Ratelimit scope - the requesting IP address.
+        schema:
+          type: string
+      X-Rate-Limit-Bot-ID:
+        description: Ratelimit scope - the provided bot ID.
+        schema:
+          type: string
