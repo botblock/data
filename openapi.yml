@@ -161,24 +161,7 @@ paths:
                     message: "'bot_id' must be a snowflake"
 
         "429":
-          description: Request ratelimited.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/Ratelimit"
-              examples:
-                bot:
-                  value:
-                    error: true
-                    status: 429
-                    retry_after: 80
-                    ratelimit_reset: 1609459320
-                    ratelimit_method: POST
-                    ratelimit_route: /api/count
-                    ratelimit_ip: 12.45.67.89
-                    ratelimit_bot_id: "123456789123456789"
-          headers:
-            $ref: "#/components/headers/Ratelimit"
+          $ref: "#/components/responses/Ratelimit"
 
   /api/bots/{id}:
     get:
@@ -336,81 +319,417 @@ paths:
                     message: "'id' must be a snowflake"
 
         "429":
-          description: Request ratelimited.
+          $ref: "#/components/responses/Ratelimit"
+
+  /api/lists:
+    get:
+      summary: Get all known bot lists
+      description: Fetch information about all bot lists that BotBlock tracks, including core information as well as API details and known features.
+      parameters:
+        - in: query
+          name: filter
+          schema:
+            type: boolean
+          description: Set to true to only return API information for each lists. Lists with no API data will be excluded from the response.
+
+      responses:
+        "200":
+          description: Lists tracked by BotBlock.
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Ratelimit"
+                description: Properties for each list.
+                type: object
+                additionalProperties:
+                  $ref: "#/components/schemas/List"
+              examples:
+                all:
+                  value:
+                    thelist.org:
+                      id: thelist.org
+                      added: 1609459200
+                      name: The List
+                      url: https://thelist.org/
+                      icon: https://thelist.org/favicon.png
+                      language: English
+                      display: 1
+                      defunct: 0
+                      discord_only: 1
+                      description: The List
+                      api_docs: https://thelist.org/api/docs
+                      api_post: https://thelist.org/api/bot/:id
+                      api_field: server_count
+                      api_shard_id: shard_id
+                      api_shard_count: shard_count
+                      api_shards: null
+                      api_get: https://thelist.org/api/bot/:id
+                      api_all: null
+                      view_bot: https://thelist.org/bot/:id
+                      bot_widget: https://thelist.org/bot/:id/widget
+                      content: null
+                      owners: "123456789123456789"
+                      discord: https://discord.gg/discord-developers
+                      features:
+                        - name: Guild count API
+                          id: guild-count-api
+                          display: 5
+                          type: 0
+                          description: Has an API endpoint for guild count
+                          value: 1
+                    listofbots.com:
+                      id: listofbots.com
+                      added: 1609459200
+                      name: List of Bots
+                      url: https://listofbots.com/
+                      icon: https://listofbots.com/assets/icon.png
+                      language: English
+                      display: 1
+                      defunct: 0
+                      discord_only: 0
+                      description: List of Bots for chat platforms
+                      api_docs: null
+                      api_post: null
+                      api_field: null
+                      api_shard_id: null
+                      api_shard_count: null
+                      api_shards: null
+                      api_get: null
+                      api_all: null
+                      view_bot: https://listofbots.com/bots/:id
+                      bot_widget: null
+                      content: null
+                      owners: "123456789123456789"
+                      discord: https://discord.gg/discord-developers
+                      features:
+                        - name: Guild count API
+                          id: guild-count-api
+                          display: 5
+                          type: 0
+                          description: Has an API endpoint for guild count
+                          value: 0
+                filtered:
+                  value:
+                    thelist.org:
+                      api_docs: https://thelist.org/api/docs
+                      api_post: https://thelist.org/api/bot/:id
+                      api_field: server_count
+                      api_shard_id: shard_id
+                      api_shard_count: shard_count
+                      api_shards: null
+                      api_get: https://thelist.org/api/bot/:id
+                      api_all: null
+
+  /api/lists/{id}:
+    get:
+      summary: Get a specific bot list
+      description: Fetch information about a given bot lists that BotBlock tracks, including core information as well as API details and known features.
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID of the list on BotBlock to fetch.
+
+      responses:
+        "200":
+          description: Requested list on BotBlock.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/List"
+              examples:
+                list:
+                  value:
+                    id: thelist.org
+                    added: 1609459200
+                    name: The List
+                    url: https://thelist.org/
+                    icon: https://thelist.org/favicon.png
+                    language: English
+                    display: 1
+                    defunct: 0
+                    discord_only: 1
+                    description: The List
+                    api_docs: https://thelist.org/api/docs
+                    api_post: https://thelist.org/api/bot/:id
+                    api_field: server_count
+                    api_shard_id: shard_id
+                    api_shard_count: shard_count
+                    api_shards: null
+                    api_get: https://thelist.org/api/bot/:id
+                    api_all: null
+                    view_bot: https://thelist.org/bot/:id
+                    bot_widget: https://thelist.org/bot/:id/widget
+                    content: null
+                    owners: "123456789123456789"
+                    discord: https://discord.gg/discord-developers
+                    features:
+                      - name: Guild count API
+                        id: guild-count-api
+                        display: 5
+                        type: 0
+                        description: Has an API endpoint for guild count
+                        value: 1
+
+        "404":
+          description: Requested list not found.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: boolean
+                    enum:
+                      - true
+                  status:
+                    type: integer
+                    enum:
+                      - 404
+                  message:
+                    description: An error message explaining the list wasn't found.
+                    type: string
               examples:
                 bot:
                   value:
                     error: true
-                    status: 429
-                    retry_after: 80
-                    ratelimit_reset: 1609459320
-                    ratelimit_method: GET
-                    ratelimit_route: /api/bots/123456789123456789
-                    ratelimit_ip: 12.45.67.89
-                    ratelimit_bot_id: "123456789123456789"
-          headers:
-            $ref: "#/components/headers/Ratelimit"
+                    status: 404
+                    message: "List not found"
+
+  /api/legacy-ids:
+    get:
+      summary: Get legacy list IDs
+      description: Fetch the map of legacy bot list IDs to the current list IDs.
+
+      responses:
+        "200":
+          description: Map of old IDs to new IDs.
+          content:
+            application/json:
+              schema:
+                description: Object mapping legacy IDs as keys to current list IDs as values.
+                type: object
+                additionalProperties:
+                  type: string
+
+              examples:
+                map:
+                  value:
+                    oldlist.com: thelist.org
+                    botlist.xyz: botlist.com
 
 components:
   schemas:
     AnyJSON:
       description: Can be any JSON-able value - string, number, boolean, array or object.
-    Ratelimit:
+    Feature:
       type: object
       properties:
-        error:
-          type: boolean
-          enum:
-            - true
-        status:
+        name:
+          description: The displayed name of the feature.
+          type: string
+        id:
+          description: The sluggified name of the feature.
+          type: string
+        display:
+          description: A value used to rank features. Sorted in descending order.
+          type: integer
+        type:
+          description: The type the feature is, with 0 = positive, 1 = neutral, 2 = negative.
           type: integer
           enum:
-            - 429
-        retry_after:
-          description: How many seconds until the API can be used again.
+            - 0
+            - 1
+            - 2
+        description:
+          description: The displayed description of the feature.
+          type: string
+    List:
+      type: object
+      properties:
+        id:
+          description: The ID of the list on BotBlock.
+          type: string
+        added:
+          description: The unix timestamp for when the list was added to BotBlock.
           type: integer
-        ratelimit_reset:
-          description: The unix timestamp when the API can be used again.
+        name:
+          description: The displayed name of the list.
+          type: string
+        url:
+          description: The main URL to access the bot list.
+          type: string
+          format: uri
+        icon:
+          description: A URL for an icon for the list.
+          type: string
+          format: uri
+        language:
+          description: The languages the list has support for.
+          type: string
+        display:
+          description: A flag for if the list is displayed on BotBlock, with 0 = hidden, 1 = displayed.
           type: integer
-        ratelimit_method:
-          description: Ratelimit scope - the HTTP method.
+          enum:
+            - 0
+            - 1
+        defunct:
+          description: A flag for if the list is known to be defunct, with 0 = active, 1 = defunct.
+          type: integer
+          enum:
+            - 0
+            - 1
+        discord_only:
+          description: A flag for if the list holds Discord bots only, with 0 = includes non-Discord, 1 = Discord-only.
+          type: integer
+          enum:
+            - 0
+            - 1
+        description:
+          description: The displayed description of the list.
           type: string
-        ratelimit_route:
-          description: Ratelimit scope - the API route.
+        api_docs:
+          description: The URL to the API docs for the list, if known.
           type: string
-        ratelimit_ip:
-          description: Ratelimit scope - the requesting IP address.
+          format: uri
+          nullable: true
+        api_post:
+          description: The endpoint URL for posting a bot's guild count to the list, if known, with `:id` as placeholder for bot Id.
           type: string
-        ratelimit_bot_id:
-          description: Ratelimit scope - the provided bot ID.
+          format: uri
+          nullable: true
+        api_field:
+          description: The field name for guild count when posting a bot's guild count to the list, if known.
           type: string
-  headers:
+          nullable: true
+        api_shard_id:
+          description: The field name for shard Id when posting a bot's guild count to the list, if known.
+          type: string
+          nullable: true
+        api_shard_count:
+          description: The field name for shard count when posting a bot's guild count to the list, if known.
+          type: string
+          nullable: true
+        api_shards:
+          description: The field name for shards when posting a bot's guild count to the list, if known.
+          type: string
+          nullable: true
+        api_get:
+          description: The endpoint URL for getting a bot from the list, if known, with `:id` as placeholder for bot Id.
+          type: string
+          format: uri
+          nullable: true
+        api_all:
+          description: The endpoint URL for getting all bots from the list, if known.
+          type: string
+          format: uri
+          nullable: true
+        view_bot:
+          description: The URL to the view a bot on the list, if known, with `:id` as placeholder for bot Id.
+          type: string
+          format: uri
+          nullable: true
+        bot_widget:
+          description: The URL to get a bot widget from the list, if known, with `:id` as placeholder for bot Id.
+          type: string
+          format: uri
+          nullable: true
+        content:
+          description: The displayed notice content for the list, if any.
+          type: string
+          nullable: true
+        owners:
+          description: Names of the list owners, if known.
+          type: string
+          nullable: true
+        discord:
+          description: The URL invite for the list's Discord server, if known.
+          type: string
+          format: uri
+          nullable: true
+        features:
+          description: A list of features that the list has
+          type: array
+          items:
+            allOf:
+              - $ref: "#/components/schemas/Feature"
+              - type: object
+                properties:
+                  value:
+                    description: A flag for if the list is known to have this feature or not, with 0 = does not have feature, 1 = has feature.
+                    type: integer
+                    enum:
+                      - 0
+                      - 1
+
+  responses:
     Ratelimit:
-      Retry-After:
-        description: How many seconds until the API can be used again.
-        schema:
-          type: integer
-      X-Rate-Limit-Reset:
-        description: The unix timestamp when the API can be used again.
-        schema:
-          type: integer
-      X-Rate-Limit-Method:
-        description: Ratelimit scope - the HTTP method.
-        schema:
-          type: string
-      X-Rate-Limit-Route:
-        description: Ratelimit scope - the API route.
-        schema:
-          type: string
-      X-Rate-Limit-IP:
-        description: Ratelimit scope - the requesting IP address.
-        schema:
-          type: string
-      X-Rate-Limit-Bot-ID:
-        description: Ratelimit scope - the provided bot ID.
-        schema:
-          type: string
+      description: Request ratelimited.
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: boolean
+                enum:
+                  - true
+              status:
+                type: integer
+                enum:
+                  - 429
+              retry_after:
+                description: How many seconds until the API can be used again.
+                type: integer
+              ratelimit_reset:
+                description: The unix timestamp when the API can be used again.
+                type: integer
+              ratelimit_method:
+                description: Ratelimit scope - the HTTP method.
+                type: string
+              ratelimit_route:
+                description: Ratelimit scope - the API route.
+                type: string
+              ratelimit_ip:
+                description: Ratelimit scope - the requesting IP address.
+                type: string
+              ratelimit_bot_id:
+                description: Ratelimit scope - the provided bot ID.
+                type: string
+          examples:
+            bot:
+              value:
+                error: true
+                status: 429
+                retry_after: 80
+                ratelimit_reset: 1609459320
+                ratelimit_method: GET
+                ratelimit_route: /api/path/name
+                ratelimit_ip: 12.45.67.89
+                ratelimit_bot_id: "123456789123456789"
+      headers:
+        Retry-After:
+          description: How many seconds until the API can be used again.
+          schema:
+            type: integer
+        X-Rate-Limit-Reset:
+          description: The unix timestamp when the API can be used again.
+          schema:
+            type: integer
+        X-Rate-Limit-Method:
+          description: Ratelimit scope - the HTTP method.
+          schema:
+            type: string
+        X-Rate-Limit-Route:
+          description: Ratelimit scope - the API route.
+          schema:
+            type: string
+        X-Rate-Limit-IP:
+          description: Ratelimit scope - the requesting IP address.
+          schema:
+            type: string
+        X-Rate-Limit-Bot-ID:
+          description: Ratelimit scope - the provided bot ID.
+          schema:
+            type: string
