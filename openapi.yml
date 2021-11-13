@@ -1,0 +1,228 @@
+openapi: 3.0.0
+
+info:
+  title: BotBlock API
+  version: 1.0.0
+
+servers:
+  - url: https://botblock.org
+    description: Production
+
+paths:
+  /api/count:
+    post:
+      summary: Update guild count
+      description: The `POST /api/count` endpoint of the BotBlock API is the core endpoint that bots and libraries integrate with, allowing a bot to make a single POST call to send their guild count to all supported lists, based on the API keys passed for lists.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                server_count:
+                  description: |
+                    The server/guild count for the bot.
+
+                    _Note: Value is required but will not be sent to a list if 'shards' is provided and the list accepts a 'shards' value._
+                  type: integer
+                bot_id:
+                  description: The ID of the bot.
+                  type: string
+                  format: snowflake
+                shard_id:
+                  description: |
+                    The shard ID for the current count being posted.
+
+                    _Note: This information is only sent to bot lists that support it._
+                  type: integer
+                shard_count:
+                  description: |
+                    The total number of shards for the bot.
+
+                    _Note: This information is only sent to bot lists that support it._
+                  type: integer
+                shards:
+                  description: |
+                    The server/guild count for each shard.
+
+                    _Note: This information is only sent to bot lists that support it._
+                  type: array
+                  items:
+                    type: integer
+              additionalProperties:
+                description: Provide keys for each list ID to post to, with the value being the API key for the list.
+                type: string
+              required:
+                - server_count
+                - bot_id
+            examples:
+              bot:
+                value:
+                  server_count: 10000
+                  bot_id: "123456789123456789"
+                  thelist.org: abcDEFghi.JKLmnoPQR.stuVWXyz1
+                  listofbots.com: abcDEFghi.JKLmnoPQR.stuVWXyz1
+                  otherlist.xyz: abcDEFghi.JKLmnoPQR.stuVWXyz1
+              shard:
+                value:
+                  server_count: 1000
+                  bot_id: "123456789123456789"
+                  shard_id: 1
+                  shard_count: 10
+                  thelist.org: abcDEFghi.JKLmnoPQR.stuVWXyz1
+                  listofbots.com: abcDEFghi.JKLmnoPQR.stuVWXyz1
+                  otherlist.xyz: abcDEFghi.JKLmnoPQR.stuVWXyz1
+              shards:
+                value:
+                  server_count: 10000
+                  bot_id: "123456789123456789"
+                  shards: [ 800, 1100, 1200, 900, 1000, 1100, 900, 800, 1200, 1000 ]
+                  thelist.org: abcDEFghi.JKLmnoPQR.stuVWXyz1
+                  listofbots.com: abcDEFghi.JKLmnoPQR.stuVWXyz1
+                  otherlist.xyz: abcDEFghi.JKLmnoPQR.stuVWXyz1
+
+      responses:
+        "200":
+          description: Guild count forwarded to provided lists.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: object
+                    additionalProperties:
+                      description: Properties for each list that returned a successful response.
+                      type: array
+                      minItems: 3
+                      maxItems: 3
+                      items:
+                        description: Integer response status code from list, followed by string response from list, followed by JSON stringified data sent to list.
+                        oneOf:
+                          - type: string
+                          - type: integer
+                  failure:
+                    type: object
+                    additionalProperties:
+                      description: Properties for each list that returned a failure response.
+                      type: array
+                      minItems: 3
+                      maxItems: 3
+                      items:
+                        description: Integer response status code from list, followed by string response from list, followed by JSON stringified data sent to list.
+                        oneOf:
+                          - type: string
+                          - type: integer
+              examples:
+                bot:
+                  value:
+                    success:
+                      thelist.org:
+                        - 200
+                        - "{\"message\":\"OK\"}"
+                        - "{\"server_count\":10000}"
+                      listofbots.com:
+                        - 200
+                        - ""
+                        - "{\"count\":10000}"
+                    failure:
+                      otherlist.xyz:
+                        - 404
+                        - "Bot not found"
+                        - "{\"guilds\":10000}"
+
+        "400":
+          description: Request validation failed.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: boolean
+                    enum:
+                      - true
+                  status:
+                    type: integer
+                    enum:
+                      - 400
+                  message:
+                    description: An error message explaining why request validation failed.
+                    type: string
+              examples:
+                bot:
+                  value:
+                    error: true
+                    status: 400
+                    message: "'bot_id' must be a snowflake"
+
+        "429":
+          description: Request ratelimited.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: boolean
+                    enum:
+                      - true
+                  status:
+                    type: integer
+                    enum:
+                      - 429
+                  retry_after:
+                    description: How many seconds until the API can be used again.
+                    type: integer
+                  ratelimit_reset:
+                    description: The unix timestamp when the API can be used again.
+                    type: integer
+                  ratelimit_method:
+                    description: Ratelimit scope - the HTTP method.
+                    type: string
+                  ratelimit_route:
+                    description: Ratelimit scope - the API route.
+                    type: string
+                  ratelimit_ip:
+                    description: Ratelimit scope - the requesting IP address.
+                    type: string
+                  ratelimit_bot_id:
+                    description: Ratelimit scope - the provided bot ID.
+                    type: string
+              examples:
+                bot:
+                  value:
+                    error: true
+                    status: 429
+                    retry_after: 80
+                    ratelimit_reset: 1609459320
+                    ratelimit_method: POST
+                    ratelimit_route: /api/count
+                    ratelimit_ip: 12.45.67.89
+                    ratelimit_bot_id: "123456789123456789"
+          headers:
+            Retry-After:
+              description: How many seconds until the API can be used again.
+              schema:
+                type: integer
+            X-Rate-Limit-Reset:
+              description: The unix timestamp when the API can be used again.
+              schema:
+                type: integer
+            X-Rate-Limit-Method:
+              description: Ratelimit scope - the HTTP method.
+              schema:
+                type: string
+            X-Rate-Limit-Route:
+              description: Ratelimit scope - the API route.
+              schema:
+                type: string
+            X-Rate-Limit-IP:
+              description: Ratelimit scope - the requesting IP address.
+              schema:
+                type: string
+            X-Rate-Limit-Bot-ID:
+              description: Ratelimit scope - the provided bot ID.
+              schema:
+                type: string
