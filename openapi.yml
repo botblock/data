@@ -154,7 +154,7 @@ paths:
                     description: An error message explaining why request validation failed.
                     type: string
               examples:
-                bot:
+                error:
                   value:
                     error: true
                     status: 400
@@ -312,7 +312,7 @@ paths:
                     description: An error message explaining why request validation failed.
                     type: string
               examples:
-                bot:
+                error:
                   value:
                     error: true
                     status: 400
@@ -491,7 +491,7 @@ paths:
                     description: An error message explaining the list wasn't found.
                     type: string
               examples:
-                bot:
+                error:
                   value:
                     error: true
                     status: 404
@@ -698,7 +698,7 @@ components:
                 description: Ratelimit scope - the provided bot ID.
                 type: string
           examples:
-            bot:
+            error:
               value:
                 error: true
                 status: 429
