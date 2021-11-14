@@ -39,18 +39,21 @@ paths:
 
                     _Note: This information is only sent to bot lists that support it._
                   type: integer
+                  nullable: true
                 shard_count:
                   description: |
                     The total number of shards for the bot.
 
                     _Note: This information is only sent to bot lists that support it._
                   type: integer
+                  nullable: true
                 shards:
                   description: |
                     The server/guild count for each shard.
 
                     _Note: This information is only sent to bot lists that support it._
                   type: array
+                  nullable: true
                   items:
                     type: integer
               additionalProperties:
