@@ -1,0 +1,11 @@
+{
+    "repo": "botblock/discordlists.py",
+    "language": "Python",
+    "name": "discordlists.py",
+    "description": "discordlists.py is available via pip and provides an easy to use Client class to automatically and manually post your server/guild count to the [{{site_name}} API](/api/docs#count) to forward it on to all {{site_name}} bot lists. This library also provides a way to get information about a bot from all lists on {{site_name}} through the [GET bot API endpoint](/api/docs#bots).",
+    "package_link": "https://pypi.org/project/discordlists.py/",
+    "package_link_name": "PyPI",
+    "badge_image": "https://img.shields.io/pypi/v/discordlists.py.svg?style=flat-square",
+    "badge_url": "https://pypi.org/project/discordlists.py/",
+    "example_usage": "from discord.ext import commands\n\nimport discordlists\n\n\nclass DiscordListsPost(commands.Cog):\n    def __init__(self, bot):\n        self.bot = bot\n        self.api = discordlists.Client(self.bot)  # Create a Client instance\n        self.api.set_auth(\"bots.ondiscord.xyz\", \"dsag38_auth_token_fda6gs\") # Set authorisation token for a bot list\n        self.api.set_auth(\"botlist.space\", \"qos56a_auth_token_gfd8g6\") # Set authorisation token for a bot list\n        self.api.start_loop()  # Posts the server count automatically every 30 minutes\n\n    @commands.command()\n    async def post(self, ctx: commands.Context):\n        \"\"\"\n        Manually posts guild count using discordlists.py (BotBlock)\n        \"\"\"\n        try:\n            result = await self.api.post_count()\n        except Exception as e:\n            await ctx.send(\"Request failed: `{}`\".format(e))\n            return\n\n        await ctx.send(\"Successfully manually posted server count ({:,}) to {:,} lists.\"\n                       \"\\nFailed to post server count to {:,} lists.\".format(self.api.server_count,\n                                                                             len(result[\"success\"].keys()),\n                                                                             len(result[\"failure\"].keys())))\n\n\ndef setup(bot):\n    bot.add_cog(DiscordListsPost(bot))"
+}

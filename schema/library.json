@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "title": "Library",
+    "description": "An API library.",
+    "required": [
+        "repo",
+        "language",
+        "name",
+        "description",
+        "package_link",
+        "package_link_name"
+    ],
+    "properties": {
+        "repo": {
+            "$id": "#/properties/repo",
+            "type": "string",
+            "title": "Library repository",
+            "description": "Short name for the library repository."
+        },
+        "language": {
+            "$id": "#/properties/language",
+            "type": "string",
+            "title": "Library language",
+            "description": "The programming language of the library."
+        },
+        "name": {
+            "$id": "#/properties/name",
+            "type": "string",
+            "title": "Library name",
+            "description": "Full name of the API library."
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "type": "string",
+            "title": "Library description",
+            "description": "The displayed description of the library."
+        },
+        "package_link": {
+            "$id": "#/properties/package_link",
+            "type": "string",
+            "title": "Library description",
+            "description": "The displayed description of the library."
+        },
+        "badge_image": {
+            "$id": "#/properties/badge_image",
+            "type": "string",
+            "title": "Badge image URL",
+            "description": "A link to a badge image for the library (e.g. the npm badge)."
+        },
+        "badge_url": {
+            "$id": "#/properties/badge_url",
+            "type": "string",
+            "title": "Badge URL",
+            "description": "A link to go when the badge image is clicked on the website."
+        },
+        "example_usage": {
+            "$id": "#/properties/example_usage",
+            "type": "string",
+            "title": "Example library usage",
+            "description": "Exemplar code for using the library."
+        }
+    }
+}

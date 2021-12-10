@@ -1,0 +1,11 @@
+{
+    "repo": "botblock/BotList",
+    "language": "Javascript",
+    "name": "BotList",
+    "description": "BotList is a package that uses the [{{site_name}} API lists endpoint](/api/docs#lists) to fetch all bot list information from {{site_name}} and then manually posts to each one from your bot instead of through the [{{site_name}} API count endpoint](/api/docs#count).",
+    "package_link": "https://www.npmjs.com/package/botlist",
+    "package_link_name": "NPM",
+    "badge_image": "https://img.shields.io/npm/v/botlist.svg?style=flat-square",
+    "badge_url": "https://www.npmjs.com/package/botlist",
+    "example_usage": "const BotList = require('botlist');\nconst botID = 'xxx';\nconst client = new BotList.Client(botID, {\n    tokens: {\n        'bots.ondiscord.xyz': 'dsag38_auth_token_fda6gs', // Add other bot lists as needed\n        'botlist.space': 'qos56a_auth_token_gfd8g6'\n    },\n    interval: 1000 * 30\n});\n\nclient.on('beforePost', () => {\n    if (!bot.ready) return;\n    const serverCount = bot.guilds.size;\n    const shards = bot.shards.size;\n    client.update(serverCount, shards);\n});\n\nclient.on('afterPost', (successful, failed) => {\n    console.log('Just finished posting to all bot lists, ' + successful + ' were successful, ' + failed + ' failed to post');\n});\n\nclient.on('error', (error) => {\n    console.warn('Something happened', error);\n});\n\nclient.start();"
+}

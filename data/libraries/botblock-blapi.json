@@ -1,0 +1,11 @@
+{
+    "repo": "botblock/BLAPI",
+    "language": "Javascript",
+    "name": "BLAPI",
+    "description": "blapi is a library that makes use of the [{{site_name}} API](/api/docs) to post directly to {{site_name}} to forward your bot server/guild count on to all lists but also uses the [lists endpoint](/api/docs#lists) to manually post to each bot list if you get ratelimited from the [{{site_name}} post count API](/api/docs#count).",
+    "package_link": "https://www.npmjs.com/package/blapi",
+    "package_link_name": "NPM",
+    "badge_image": "https://img.shields.io/npm/v/blapi.svg?style=flat-square",
+    "badge_url": "https://www.npmjs.com/package/blapi",
+    "example_usage": "const Discord = require(\"discord.js\");\nconst blapi = require(\"blapi\");\nconst apiKeys = {\n  \"bots.ondiscord.xyz\": \"dsag38_auth_token_fda6gs\", // Add other bot lists as needed\n  \"botlist.space\": \"qos56a_auth_token_gfd8g6\"\n}\n\nlet bot = new Discord.Client({ autoReconnect: true });\nblapi.handle(bot, apiKeys, 60); // If interval is not passed (60), it will default to every 30 minutes"
+}
