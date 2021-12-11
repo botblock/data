@@ -2,7 +2,7 @@
     "repo": "botblock/BotList",
     "language": "Javascript",
     "name": "BotList",
-    "description": "BotList is a package that uses the [{{site_name}} API lists endpoint](/api/docs#lists) to fetch all bot list information from {{site_name}} and then manually posts to each one from your bot instead of through the [{{site_name}} API count endpoint](/api/docs#count).",
+    "description": "BotList is a package that uses the [BotBlock API lists endpoint](/docs#get-api-lists) to fetch all bot list information from BotBlock and then manually posts to each one from your bot instead of through the [BotBlock API count endpoint](/docs#post-api-count).",
     "package_link": "https://www.npmjs.com/package/botlist",
     "package_link_name": "NPM",
     "badge_image": "https://img.shields.io/npm/v/botlist.svg?style=flat-square",

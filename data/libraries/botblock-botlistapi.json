@@ -2,7 +2,7 @@
     "repo": "botblock/BotListAPI",
     "language": "C#",
     "name": "BotListAPI",
-    "description": "BotListAPI is a C# nuget package for the discord.net lib that provides an easy method to manually or automatically post your bot's server count every 10 minutes with information for each bot list through the [{{site_name}} API](/api/docs). It also supports sharded clients and .net framework or .net core.",
+    "description": "BotListAPI is a C# nuget package for the discord.net lib that provides an easy method to manually or automatically post your bot's server count every 10 minutes with information for each bot list through the [BotBlock API](/docs). It also supports sharded clients and .net framework or .net core.",
     "package_link": "https://www.nuget.org/packages/BotListAPI",
     "package_link_name": "NuGet",
     "badge_image": "https://img.shields.io/nuget/v/BotListAPI.svg?style=flat-square",
