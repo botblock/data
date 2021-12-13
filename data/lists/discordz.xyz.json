@@ -27,6 +27,7 @@
         "html-long-description",
         "iframe-long-description",
         "markdown-long-description",
+        "custom-bot-donate-link",
         "custom-bot-github-link",
         "custom-bot-invite-link",
         "custom-bot-website-link",
@@ -40,6 +41,7 @@
         "has-mobile-support",
         "has-search",
         "has-widget",
+        "requires-owner-in-server",
         "server-count-api"
     ]
 }
