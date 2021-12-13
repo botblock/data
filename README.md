@@ -8,6 +8,7 @@ Schemas are available for each `data` type in [`schema`](schema):
 
 - [`feature`](schema/feature.json)
 - [`legacy`](schema/legacy.json)
+- [`library`](schema/library.json)
 - [`list`](schema/list.json)
 
 ## OpenAPI
