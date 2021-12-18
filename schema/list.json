@@ -162,6 +162,7 @@
     "owners": {
       "$id": "#/properties/owners",
       "type": [ "string", "null" ],
+        "pattern": "^(.{2,32}#\\d{4} \\(\\d{16,}\\))(, (.{2,32}#\\d{4} \\(\\d{16,}\\)))*$",
       "title": "List owners",
       "description": "Names of the list owners, if known."
     },

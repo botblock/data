@@ -143,6 +143,18 @@ describe('lists data', () => {
         expect(mismatches).toEqual([]);
     });
 
-    // TODO: Each feature in each file is a valid feature
-    // TODO: Owners field is formatted correctly
+    test('contain valid features', async () => {
+        // Get the files
+        const files = await loadValidJsonFiles(join(__dirname, '..', 'data', 'lists'));
+
+        // Get all valid features
+        const featuresFiles = await loadValidJsonFiles(join(__dirname, '..', 'data', 'features'));
+        const features = featuresFiles.map(({ data }) => data.id);
+
+        // Get lists that have invalid features
+        const failures = files.filter(({ data }) => data.features.some(id => !features.includes(id)));
+
+        // Expect no errors
+        expect(failures).toEqual([]);
+    });
 });
