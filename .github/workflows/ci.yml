@@ -51,7 +51,7 @@ jobs:
             await github.rest.actions.createWorkflowDispatch({
               owner: 'botblock',
               repo: 'static-site',
-              workflow_id: 'workflows/deployment-staging.yml',
+              workflow_id: 'deployment-staging.yml',
               ref: 'staging',
             });
 
@@ -63,7 +63,7 @@ jobs:
             await github.rest.actions.createWorkflowDispatch({
               owner: 'botblock',
               repo: 'static-site',
-              workflow_id: 'workflows/deployment-production.yml',
+              workflow_id: 'deployment-production.yml',
               ref: 'production',
             });
 
@@ -75,7 +75,7 @@ jobs:
             await github.rest.actions.createWorkflowDispatch({
               owner: 'botblock',
               repo: 'api-worker',
-              workflow_id: 'workflows/deployment-staging.yml',
+              workflow_id: 'deployment-staging.yml',
               ref: 'staging',
             });
 
@@ -87,6 +87,6 @@ jobs:
             await github.rest.actions.createWorkflowDispatch({
               owner: 'botblock',
               repo: 'api-worker',
-              workflow_id: 'workflows/deployment-production.yml',
+              workflow_id: 'deployment-production.yml',
               ref: 'production',
             });
