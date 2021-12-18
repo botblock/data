@@ -1,11 +1,5 @@
-const { promises: { readdir } } = require('fs');
 const { join } = require('path');
-
-const getDirectories = source => readdir(source, { withFileTypes: true })
-    .then(data => data.filter(dirent => dirent.isDirectory()).map(dirent => dirent.name));
-
-const getFiles = source => readdir(source, { withFileTypes: true })
-    .then(data => data.filter(dirent => dirent.isFile()).map(dirent => dirent.name));
+const { getDirectories, getFiles } = require('./util');
 
 describe('repository', () => {
     test('contains data, schema and validate directories', async () => {
@@ -73,7 +67,7 @@ describe('data directory', () => {
         test('contains no directories', async () => {
             // Get directories
             const directories = await getDirectories(join(__dirname, '..', 'data', 'features'));
-            expect(directories.length).toEqual(0);
+            expect(directories).toEqual([]);
         });
 
         test('contains only json files', async () => {
@@ -90,7 +84,7 @@ describe('data directory', () => {
         test('contains no directories', async () => {
             // Get directories
             const directories = await getDirectories(join(__dirname, '..', 'data', 'libraries'));
-            expect(directories.length).toEqual(0);
+            expect(directories).toEqual([]);
         });
 
         test('contains only json files', async () => {
@@ -107,7 +101,7 @@ describe('data directory', () => {
         test('contains no directories', async () => {
             // Get directories
             const directories = await getDirectories(join(__dirname, '..', 'data', 'lists'));
-            expect(directories.length).toEqual(0);
+            expect(directories).toEqual([]);
         });
 
         test('contains only json files', async () => {
@@ -125,7 +119,7 @@ describe('schema directory', () => {
     test('contains no directories', async () => {
         // Get directories
         const directories = await getDirectories(join(__dirname, '..', 'schema'));
-        expect(directories.length).toEqual(0);
+        expect(directories).toEqual([]);
     });
 
     test('contains required json schema files', async () => {
@@ -146,7 +140,7 @@ describe('validate directory', () => {
     test('contains no directories', async () => {
         // Get directories
         const directories = await getDirectories(join(__dirname, '..', 'validate'));
-        expect(directories.length).toEqual(0);
+        expect(directories).toEqual([]);
     });
 
     test('contains required test files', async () => {
@@ -158,6 +152,7 @@ describe('validate directory', () => {
             'data.test.js',
             'files.test.js',
             'schemas.test.js',
+            'util.js',
         ].sort());
     });
 });
