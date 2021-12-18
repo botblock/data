@@ -1,7 +1,7 @@
 const { join } = require('path');
 const Ajv = require('ajv');
 const SwaggerParser = require('@apidevtools/swagger-parser');
-const { getFiles, loadJson } = require('./util');
+const { loadInvalidJsonFiles, loadValidJsonFiles } = require('./util');
 
 describe('openapi schema', () => {
     test('is a valid openapi schema', async () => {
@@ -15,40 +15,26 @@ describe('openapi schema', () => {
 
 describe('json schemas', () => {
     test('are valid json files', async () => {
-        // Get json schemas
-        const schemas = await getFiles(join(__dirname, '..', 'schema'))
-            .then(files => files.filter(file => file.endsWith('.json')));
-
-        // Attempt to read and parse each schema file
-        const failures = await Promise.all(schemas
-            .map(schema => loadJson(join(__dirname, '..', 'schema', schema))
-                .then(() => null, error => ({ schema, error }))))
-            .then(results => results.filter(res => res !== null));
+        // Get invalid json files
+        const failures = await loadInvalidJsonFiles(join(__dirname, '..', 'schema'));
 
         // Expect no errors
         expect(failures).toEqual([]);
     });
 
     test('are valid json schemas', async () => {
-        // Get json schemas
-        const schemas = await getFiles(join(__dirname, '..', 'schema'))
-            .then(files => files.filter(file => file.endsWith('.json')));
-
         // Get valid json files
-        const valid = await Promise.all(schemas
-            .map(schema => loadJson(join(__dirname, '..', 'schema', schema))
-                .then(data => ({ schema, data }), () => null)))
-            .then(results => results.filter(res => res !== null));
+        const valid = await loadValidJsonFiles(join(__dirname, '..', 'schema'));
 
         // Validate schemas
         const ajv = new Ajv();
-        const failures = valid.map(({ schema, data }) => {
+        const failures = valid.map(({ file, data }) => {
            try {
                const valid = ajv.validateSchema(data);
-               const errors = ajv.errorsText(ajv.errors);
-               return { schema, valid, errors };
+               const errors = ajv.errors;
+               return { file, valid, errors };
            } catch (err) {
-               return { schema, valid: false, errors: err.message };
+               return { file, valid: false, errors: err.message };
            }
         }).filter(({ valid }) => !valid);
 

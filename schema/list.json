@@ -89,7 +89,7 @@
     },
     "description": {
       "$id": "#/properties/description",
-      "type": "string",
+      "type": [ "string", "null" ],
       "title": "List description",
       "description": "The displayed description of the list."
     },
@@ -176,7 +176,6 @@
       "type": "array",
       "title": "List features.",
       "description": "A list of feature Ids the bot list has. Ids must be valid feature Ids.",
-      "additionalItems": true,
       "items": {
         "type": "string",
         "title": "Feature Id",
