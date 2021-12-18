@@ -1,187 +1,238 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
-  "type": "object",
-  "title": "List",
-  "description": "A bot list.",
-  "required": [
-    "id",
-    "added",
-    "name",
-    "url",
-    "icon",
-    "language",
-    "display",
-    "defunct",
-    "discord_only",
-    "description",
-    "api_docs",
-    "api_post",
-    "api_field",
-    "api_shard_id",
-    "api_shard_count",
-    "api_shards",
-    "api_get",
-    "api_all",
-    "view_bot",
-    "bot_widget",
-    "content",
-    "owners",
-    "discord",
-    "features"
-  ],
-  "properties": {
-    "id": {
-      "$id": "#/properties/id",
-      "type": "string",
-      "title": "List Id",
-      "description": "The domain of the bot list. Matches the file name."
-    },
-    "added": {
-      "$id": "#/properties/added",
-      "type": "integer",
-      "title": "List added timestamp",
-      "description": "Unix timestamp for when the list was added to BotBlock."
-    },
-    "name": {
-      "$id": "#/properties/name",
-      "type": "string",
-      "title": "List name",
-      "description": "The displayed name of the list."
-    },
-    "url": {
-      "$id": "#/properties/url",
-      "type": "string",
-      "title": "List URL",
-      "description": "The main URL to access the bot list."
-    },
-    "icon": {
-      "$id": "#/properties/icon",
-      "type": "string",
-      "title": "List icon",
-      "description": "A URL for an icon for the list."
-    },
-    "language": {
-      "$id": "#/properties/language",
-      "type": "string",
-      "title": "List language(s)",
-      "description": "The languages the list has support for."
-    },
-    "display": {
-      "$id": "#/properties/display",
-      "type": "integer",
-      "title": "List display status",
-      "description": "A flag for if the list is displayed on BotBlock, with 0 = hidden, 1 = displayed.",
-      "enum": [ 0, 1 ]
-    },
-    "defunct": {
-      "$id": "#/properties/defunct",
-      "type": "integer",
-      "title": "List defunct status",
-      "description": "A flag for if the list is known to be defunct, with 0 = active, 1 = defunct.",
-      "enum": [ 0, 1 ]
-    },
-    "discord_only": {
-      "$id": "#/properties/discord_only",
-      "type": "integer",
-      "title": "List Discord-only status",
-      "description": "A flag for if the list holds Discord bots only, with 0 = includes non-Discord, 1 = Discord-only.",
-      "enum": [ 0, 1 ]
-    },
-    "description": {
-      "$id": "#/properties/description",
-      "type": "string",
-      "title": "List description",
-      "description": "The displayed description of the list."
-    },
-    "api_docs": {
-      "$id": "#/properties/api_docs",
-      "type": [ "string", "null" ],
-      "title": "List API docs URL",
-      "description": "The URL to the API docs for the list, if known."
-    },
-    "api_post": {
-      "$id": "#/properties/api_post",
-      "type": [ "string", "null" ],
-      "title": "List API guild count POST endpoint",
-      "description": "The endpoint URL for posting a bot's guild count to the list, if known, with `:id` as placeholder for bot Id."
-    },
-    "api_field": {
-      "$id": "#/properties/api_field",
-      "type": [ "string", "null" ],
-      "title": "List API count field name",
-      "description": "The field name for guild count when posting a bot's guild count to the list, if known."
-    },
-    "api_shard_id": {
-      "$id": "#/properties/api_shard_id",
-      "type": [ "string", "null" ],
-      "title": "List API shard Id field name",
-      "description": "The field name for shard Id when posting a bot's guild count to the list, if known."
-    },
-    "api_shard_count": {
-      "$id": "#/properties/api_shard_count",
-      "type": [ "string", "null" ],
-      "title": "List API shard count field name",
-      "description": "The field name for shard count when posting a bot's guild count to the list, if known."
-    },
-    "api_shards": {
-      "$id": "#/properties/api_shards",
-      "type": [ "string", "null" ],
-      "title": "List API shards field name",
-      "description": "The field name for shards when posting a bot's guild count to the list, if known."
-    },
-    "api_get": {
-      "$id": "#/properties/api_get",
-      "type": [ "string", "null" ],
-      "title": "List API bot GET endpoint",
-      "description": "The endpoint URL for getting a bot from the list, if known, with `:id` as placeholder for bot Id."
-    },
-    "api_all": {
-      "$id": "#/properties/api_all",
-      "type": [ "string", "null" ],
-      "title": "List API all bots GET endpoint",
-      "description": "The endpoint URL for getting all bots from the list, if known."
-    },
-    "view_bot": {
-      "$id": "#/properties/view_bot",
-      "type": [ "string", "null" ],
-      "title": "List view bot URL",
-      "description": "The URL to the view a bot on the list, if known, with `:id` as placeholder for bot Id."
-    },
-    "bot_widget": {
-      "$id": "#/properties/bot_widget",
-      "type": [ "string", "null" ],
-      "title": "List bot widget URL",
-      "description": "The URL to get a bot widget from the list, if known, with `:id` as placeholder for bot Id."
-    },
-    "content": {
-      "$id": "#/properties/content",
-      "type": [ "string", "null" ],
-      "title": "List notice content",
-      "description": "The displayed notice content for the list, if any."
-    },
-    "owners": {
-      "$id": "#/properties/owners",
-      "type": [ "string", "null" ],
-      "title": "List owners",
-      "description": "Names of the list owners, if known."
-    },
-    "discord": {
-      "$id": "#/properties/discord",
-      "type": [ "string", "null" ],
-      "title": "List Discord invite URL",
-      "description": "The URL invite for the list's Discord server, if known."
-    },
-    "features": {
-      "$id": "#/properties/features",
-      "type": "array",
-      "title": "List features.",
-      "description": "A list of feature Ids the bot list has. Ids must be valid feature Ids.",
-      "additionalItems": true,
-      "items": {
-        "type": "string",
-        "title": "Feature Id",
-        "description": "The Id of an existing feature."
-      }
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "title": "List",
+    "description": "A bot list.",
+    "required": [
+        "id",
+        "added",
+        "name",
+        "url",
+        "icon",
+        "language",
+        "display",
+        "defunct",
+        "discord_only",
+        "description",
+        "api_docs",
+        "api_post",
+        "api_field",
+        "api_shard_id",
+        "api_shard_count",
+        "api_shards",
+        "api_get",
+        "api_all",
+        "view_bot",
+        "bot_widget",
+        "content",
+        "owners",
+        "discord",
+        "features"
+    ],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "string",
+            "title": "List Id",
+            "description": "The domain of the bot list. Matches the file name."
+        },
+        "added": {
+            "$id": "#/properties/added",
+            "type": "integer",
+            "title": "List added timestamp",
+            "description": "Unix timestamp for when the list was added to BotBlock."
+        },
+        "name": {
+            "$id": "#/properties/name",
+            "type": "string",
+            "title": "List name",
+            "description": "The displayed name of the list."
+        },
+        "url": {
+            "$id": "#/properties/url",
+            "type": "string",
+            "title": "List URL",
+            "description": "The main URL to access the bot list."
+        },
+        "icon": {
+            "$id": "#/properties/icon",
+            "type": "string",
+            "title": "List icon",
+            "description": "A URL for an icon for the list."
+        },
+        "language": {
+            "$id": "#/properties/language",
+            "type": "string",
+            "title": "List language(s)",
+            "description": "The languages the list has support for."
+        },
+        "display": {
+            "$id": "#/properties/display",
+            "type": "integer",
+            "title": "List display status",
+            "description": "A flag for if the list is displayed on BotBlock, with 0 = hidden, 1 = displayed.",
+            "enum": [
+                0,
+                1
+            ]
+        },
+        "defunct": {
+            "$id": "#/properties/defunct",
+            "type": "integer",
+            "title": "List defunct status",
+            "description": "A flag for if the list is known to be defunct, with 0 = active, 1 = defunct.",
+            "enum": [
+                0,
+                1
+            ]
+        },
+        "discord_only": {
+            "$id": "#/properties/discord_only",
+            "type": "integer",
+            "title": "List Discord-only status",
+            "description": "A flag for if the list holds Discord bots only, with 0 = includes non-Discord, 1 = Discord-only.",
+            "enum": [
+                0,
+                1
+            ]
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "List description",
+            "description": "The displayed description of the list."
+        },
+        "api_docs": {
+            "$id": "#/properties/api_docs",
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "List API docs URL",
+            "description": "The URL to the API docs for the list, if known."
+        },
+        "api_post": {
+            "$id": "#/properties/api_post",
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "List API guild count POST endpoint",
+            "description": "The endpoint URL for posting a bot's guild count to the list, if known, with `:id` as placeholder for bot Id."
+        },
+        "api_field": {
+            "$id": "#/properties/api_field",
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "List API count field name",
+            "description": "The field name for guild count when posting a bot's guild count to the list, if known."
+        },
+        "api_shard_id": {
+            "$id": "#/properties/api_shard_id",
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "List API shard Id field name",
+            "description": "The field name for shard Id when posting a bot's guild count to the list, if known."
+        },
+        "api_shard_count": {
+            "$id": "#/properties/api_shard_count",
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "List API shard count field name",
+            "description": "The field name for shard count when posting a bot's guild count to the list, if known."
+        },
+        "api_shards": {
+            "$id": "#/properties/api_shards",
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "List API shards field name",
+            "description": "The field name for shards when posting a bot's guild count to the list, if known."
+        },
+        "api_get": {
+            "$id": "#/properties/api_get",
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "List API bot GET endpoint",
+            "description": "The endpoint URL for getting a bot from the list, if known, with `:id` as placeholder for bot Id."
+        },
+        "api_all": {
+            "$id": "#/properties/api_all",
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "List API all bots GET endpoint",
+            "description": "The endpoint URL for getting all bots from the list, if known."
+        },
+        "view_bot": {
+            "$id": "#/properties/view_bot",
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "List view bot URL",
+            "description": "The URL to the view a bot on the list, if known, with `:id` as placeholder for bot Id."
+        },
+        "bot_widget": {
+            "$id": "#/properties/bot_widget",
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "List bot widget URL",
+            "description": "The URL to get a bot widget from the list, if known, with `:id` as placeholder for bot Id."
+        },
+        "content": {
+            "$id": "#/properties/content",
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "List notice content",
+            "description": "The displayed notice content for the list, if any."
+        },
+        "owners": {
+            "$id": "#/properties/owners",
+            "type": [
+                "string",
+                "null"
+            ],
+            "pattern": "^(.{2,32}#\\d{4} \\(\\d{16,}\\))(, (.{2,32}#\\d{4} \\(\\d{16,}\\)))*$",
+            "title": "List owners",
+            "description": "Names of the list owners, if known."
+        },
+        "discord": {
+            "$id": "#/properties/discord",
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "List Discord invite URL",
+            "description": "The URL invite for the list's Discord server, if known."
+        },
+        "features": {
+            "$id": "#/properties/features",
+            "type": "array",
+            "title": "List features.",
+            "description": "A list of feature Ids the bot list has. Ids must be valid feature Ids.",
+            "items": {
+                "type": "string",
+                "title": "Feature Id",
+                "description": "The Id of an existing feature."
+            }
+        }
     }
-  }
 }
