@@ -17,6 +17,7 @@ describe('repository', () => {
 
         // Check only expected directories are present
         expect(filtered.sort()).toEqual([
+            '.github',
             'data',
             'schema',
             'validate',
@@ -56,6 +57,42 @@ describe('repository', () => {
 
         // Expect no errors
         expect(editorconfig.error).toBeNull();
+    });
+});
+
+describe('.github directory', () => {
+    test('contains workflows directory', async () => {
+        // Get directories
+        const directories = await getDirectories(join(__dirname, '..', '.github'));
+
+        // Check only expected directories are present
+        expect(directories.sort()).toEqual([
+            'workflows',
+        ].sort());
+    });
+
+    test('contains no files', async () => {
+        // Get files
+        const files = await getFiles(join(__dirname, '..', '.github'));
+        expect(files).toEqual([]);
+    });
+
+    describe('workflows subdirectory', () => {
+        test('contains no directories', async () => {
+            // Get directories
+            const directories = await getDirectories(join(__dirname, '..', '.github', 'workflows'));
+            expect(directories).toEqual([]);
+        });
+
+        test('contains ci workflow file', async () => {
+            // Get files
+            const files = await getFiles(join(__dirname, '..', '.github', 'workflows'));
+
+            // Check only expected files are present
+            expect(files.sort()).toEqual([
+                'ci.yml',
+            ].sort());
+        });
     });
 });
 
