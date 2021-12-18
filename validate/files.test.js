@@ -1,4 +1,5 @@
 const { join } = require('path');
+const { exec } = require('child_process');
 const { getDirectories, getFiles } = require('./util');
 
 describe('repository', () => {
@@ -39,7 +40,23 @@ describe('repository', () => {
         ].sort());
     });
 
-    // TODO: Run echint
+    test('complies with editorconfig', async () => {
+        // Run editorconfig
+        const editorconfig = await new Promise(resolve => exec(
+            './node_modules/.bin/editorconfig-checker',
+            { cwd: join(__dirname, '..') },
+            (error, stdout, stderr) => resolve({ error, stdout, stderr }),
+        ));
+
+        // Log output if errored
+        if (editorconfig.error) {
+            console.log(editorconfig.stdout);
+            console.error(editorconfig.stderr);
+        }
+
+        // Expect no errors
+        expect(editorconfig.error).toBeNull();
+    });
 });
 
 describe('data directory', () => {

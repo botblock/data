@@ -6,7 +6,7 @@ const { loadInvalidJsonFiles, loadValidJsonFiles } = require('./util');
 describe('openapi schema', () => {
     test('is a valid openapi schema', async () => {
         // Load and parse the schema
-        const errors = await SwaggerParser.validate(join(__dirname, '..',  'openapi.yml')).then(() => null, err => err);
+        const errors = await SwaggerParser.validate(join(__dirname, '..', 'openapi.yml')).then(() => null, err => err);
 
         // Expect no errors
         expect(errors).toBeNull();
@@ -29,13 +29,13 @@ describe('json schemas', () => {
         // Validate schemas
         const ajv = new Ajv();
         const failures = valid.map(({ file, data }) => {
-           try {
-               const valid = ajv.validateSchema(data);
-               const errors = ajv.errors;
-               return { file, valid, errors };
-           } catch (err) {
-               return { file, valid: false, errors: err.message };
-           }
+            try {
+                const valid = ajv.validateSchema(data);
+                const errors = ajv.errors;
+                return { file, valid, errors };
+            } catch (err) {
+                return { file, valid: false, errors: err.message };
+            }
         }).filter(({ valid }) => !valid);
 
         // Expect no errors

@@ -21,6 +21,7 @@
     "devDependencies": {
         "@apidevtools/swagger-parser": "^10.0.3",
         "ajv": "^8.8.2",
+        "editorconfig-checker": "^4.0.2",
         "jest": "^27.4.5"
     }
 }
