@@ -38,6 +38,8 @@ describe('repository', () => {
             'README.md',
         ].sort());
     });
+
+    // TODO: Run echint
 });
 
 describe('data directory', () => {

@@ -1,8 +1,15 @@
 const { join } = require('path');
-const { loadJson, validateJsonFiles, loadValidJsonFiles } = require('./util');
+const { loadInvalidJsonFiles, loadJson, validateJsonFiles, loadValidJsonFiles } = require('./util');
 
 describe('legacy data', () => {
-    // TODO: Is a valid JSON file
+    test('is a valid json file', async () => {
+        // Get invalid json files
+        const failures = await loadInvalidJsonFiles(join(__dirname, '..', 'data'))
+            .then(invalid => invalid.filter(({ file }) => file === 'legacy.json'));
+
+        // Expect no errors
+        expect(failures).toEqual([]);
+    });
 
     test('is valid against schema', async () => {
         // Get the file and schema
@@ -17,12 +24,34 @@ describe('legacy data', () => {
         expect(failures).toEqual([]);
     });
 
-    // TODO: Each key is unique
-    // TODO: Each value is a valid list
+    test('contains valid list ids', async () => {
+        // Get the file
+        const files = await loadValidJsonFiles(join(__dirname, '..', 'data'))
+            .then(valid => valid.filter(({ file }) => file === 'legacy.json'));
+
+        // If invalid, don't test
+        if (!files.length) return;
+
+        // Get all valid lists
+        const listsFiles = await loadValidJsonFiles(join(__dirname, '..', 'data', 'lists'));
+        const lists = listsFiles.map(({ data }) => data.id);
+
+        // Get non-existent lists
+        const missing = Object.values(files[0].data).filter(id => !lists.includes(id));
+
+        // Expect no missing lists
+        expect(missing).toEqual([]);
+    });
 });
 
 describe('features data', () => {
-    // TODO: Are valid JSON files
+    test('are valid json files', async () => {
+        // Get invalid json files
+        const failures = await loadInvalidJsonFiles(join(__dirname, '..', 'data', 'features'));
+
+        // Expect no errors
+        expect(failures).toEqual([]);
+    });
 
     test('are valid against schema', async () => {
         // Get the files and schema
@@ -36,11 +65,26 @@ describe('features data', () => {
         expect(failures).toEqual([]);
     });
 
-    // TODO: Each id matches file name
+    test('have file names that match ids', async () => {
+        // Get the files
+        const files = await loadValidJsonFiles(join(__dirname, '..', 'data', 'features'));
+
+        // Get mis-matches
+        const mismatches = files.filter(({ file, data }) => file !== `${data.id}.json`);
+
+        // Expect no mis-matches
+        expect(mismatches).toEqual([]);
+    });
 });
 
 describe('libraries data', () => {
-    // TODO: Are valid JSON files
+    test('are valid json files', async () => {
+        // Get invalid json files
+        const failures = await loadInvalidJsonFiles(join(__dirname, '..', 'data', 'libraries'));
+
+        // Expect no errors
+        expect(failures).toEqual([]);
+    });
 
     test('are valid against schema', async () => {
         // Get the files and schema
@@ -54,11 +98,27 @@ describe('libraries data', () => {
         expect(failures).toEqual([]);
     });
 
-    // TODO: Each sluggified repo matches file name
+    test('have file names that match sluggified repos', async () => {
+        // Get the files
+        const files = await loadValidJsonFiles(join(__dirname, '..', 'data', 'libraries'));
+
+        // Get mis-matches
+        const sluggify = name => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+        const mismatches = files.filter(({ file, data }) => file !== `${sluggify(data.repo)}.json`);
+
+        // Expect no mis-matches
+        expect(mismatches).toEqual([]);
+    });
 });
 
 describe('lists data', () => {
-    // TODO: Are valid JSON files
+    test('are valid json files', async () => {
+        // Get invalid json files
+        const failures = await loadInvalidJsonFiles(join(__dirname, '..', 'data', 'lists'));
+
+        // Expect no errors
+        expect(failures).toEqual([]);
+    });
 
     test('are valid against schema', async () => {
         // Get the files and schema
@@ -72,7 +132,17 @@ describe('lists data', () => {
         expect(failures).toEqual([]);
     });
 
-    // TODO: Each id matches file name
+    test('have file names that match ids', async () => {
+        // Get the files
+        const files = await loadValidJsonFiles(join(__dirname, '..', 'data', 'lists'));
+
+        // Get mis-matches
+        const mismatches = files.filter(({ file, data }) => file !== `${data.id}.json`);
+
+        // Expect no mis-matches
+        expect(mismatches).toEqual([]);
+    });
+
     // TODO: Each feature in each file is a valid feature
     // TODO: Owners field is formatted correctly
 });
