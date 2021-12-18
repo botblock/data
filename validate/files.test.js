@@ -90,7 +90,8 @@ describe('.github directory', () => {
 
             // Check only expected files are present
             expect(files.sort()).toEqual([
-                'ci.yml',
+                'deploy.yml',
+                'test.yml',
             ].sort());
         });
     });
