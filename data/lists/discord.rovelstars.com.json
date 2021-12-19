@@ -40,7 +40,7 @@
         "custom-bot-website-link",
         "vanity-urls-for-all",
         "votes-sent-to-webhooks",
-        "additional-bot-owners/editors",
+        "additional-bot-owners-editors",
         "has-search",
         "requires-owner-in-server"
     ]
