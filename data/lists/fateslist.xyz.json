@@ -20,7 +20,7 @@
     "view_bot": "https://fateslist.xyz/bot/:id",
     "bot_widget": "https://fateslist.xyz/bots/:id/widget",
     "content": null,
-    "owners": "mikes#0001 (428292404160757760), Rootspring#6701 (563808552288780322), skylarr#6666 (790722073248661525), Builderb#0001 (190590364871032834)",
+    "owners": "Rootspring#6701 (563808552288780322), skylarr#6666 (790722073248661525), Builderb#0001 (190590364871032834)",
     "discord": "https://discord.gg/69Thz4teWm",
     "features": [
         "bot-resubmission",
