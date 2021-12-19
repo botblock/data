@@ -20,7 +20,7 @@
     "view_bot": "https://fateslist.xyz/bot/:id",
     "bot_widget": "https://fateslist.xyz/bots/:id/widget",
     "content": null,
-    "owners": "mikes#0001 (ID: 428292404160757760), Rootspring#6701 (ID: 563808552288780322)",
+    "owners": "mikes#0001 (428292404160757760), Rootspring#6701 (563808552288780322)",
     "discord": "https://discord.gg/69Thz4teWm",
     "features": [
         "bot-resubmission",
