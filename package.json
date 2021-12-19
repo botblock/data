@@ -1,0 +1,27 @@
+{
+    "name": "data",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Open data for BotBlock.org, consumed for the API worker & website.",
+    "main": "",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/botblock/data.git"
+    },
+    "keywords": [],
+    "author": "Matt (IPv4) Cowley",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/botblock/data/issues"
+    },
+    "homepage": "https://github.com/botblock/data#readme",
+    "devDependencies": {
+        "@apidevtools/swagger-parser": "^10.0.3",
+        "ajv": "^8.8.2",
+        "editorconfig-checker": "^4.0.2",
+        "jest": "^27.4.5"
+    }
+}

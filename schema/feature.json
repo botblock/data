@@ -1,46 +1,50 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
-  "type": "object",
-  "title": "Feature",
-  "description": "A list feature.",
-  "required": [
-    "name",
-    "id",
-    "display",
-    "type",
-    "description"
-  ],
-  "properties": {
-    "name": {
-      "$id": "#/properties/name",
-      "type": "string",
-      "title": "Feature name",
-      "description": "The displayed name of the feature."
-    },
-    "id": {
-      "$id": "#/properties/id",
-      "type": "string",
-      "title": "Feature Id",
-      "description": "The sluggified name of the feature. Matches the file name."
-    },
-    "display": {
-      "$id": "#/properties/display",
-      "type": "integer",
-      "title": "Display order",
-      "description": "A value used to rank features. Sorted in descending order."
-    },
-    "type": {
-      "$id": "#/properties/type",
-      "type": "integer",
-      "title": "Feature type",
-      "description": "The type the feature is, with 0 = positive, 1 = neutral, 2 = negative.",
-      "enum": [ 0, 1, 2 ]
-    },
-    "description": {
-      "$id": "#/properties/description",
-      "type": "string",
-      "title": "Feature description",
-      "description": "The displayed description of the feature."
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "title": "Feature",
+    "description": "A list feature.",
+    "required": [
+        "name",
+        "id",
+        "display",
+        "type",
+        "description"
+    ],
+    "properties": {
+        "name": {
+            "$id": "#/properties/name",
+            "type": "string",
+            "title": "Feature name",
+            "description": "The displayed name of the feature."
+        },
+        "id": {
+            "$id": "#/properties/id",
+            "type": "string",
+            "title": "Feature Id",
+            "description": "The sluggified name of the feature. Matches the file name."
+        },
+        "display": {
+            "$id": "#/properties/display",
+            "type": "integer",
+            "title": "Display order",
+            "description": "A value used to rank features. Sorted in descending order."
+        },
+        "type": {
+            "$id": "#/properties/type",
+            "type": "integer",
+            "title": "Feature type",
+            "description": "The type the feature is, with 0 = positive, 1 = neutral, 2 = negative.",
+            "enum": [
+                0,
+                1,
+                2
+            ]
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "type": "string",
+            "title": "Feature description",
+            "description": "The displayed description of the feature."
+        }
     }
-  }
 }
