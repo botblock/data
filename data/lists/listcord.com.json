@@ -6,7 +6,7 @@
     "icon": "https://cdn.discordapp.com/icons/692858882153775164/2a6fac8a8090bc3b9e4f490ba978bf93.png",
     "language": "English",
     "display": 0,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": null,
     "api_docs": null,
