@@ -6,7 +6,7 @@
     "icon": "https://cdn.discordapp.com/icons/802571102832033822/f9bbb04b8d02b0bad459687171d8ab28.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "Listcord is a brand new botlist where you can add and find great bots!",
     "api_docs": "https://listcord.gg/docs",
