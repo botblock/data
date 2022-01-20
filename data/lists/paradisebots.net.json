@@ -6,7 +6,7 @@
     "icon": "https://paradisebots.net/images/ParadiseBotsLogo.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "The Discord Bot List that strives to provide all Discord Bots & Bot Devs With a little bit of Advertising Freedom!!",
     "api_docs": "https://docs.paradisebots.net/",
