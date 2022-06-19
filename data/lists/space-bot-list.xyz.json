@@ -6,7 +6,7 @@
     "icon": "https://cdn.discordapp.com/attachments/595675239480950807/717039409916280863/SBL_new.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "Space Bots List is botlist that you can find most of good bots, and learn from here how to make bot, with helpful staff",
     "api_docs": "https://spacebots.gitbook.io/tutorial-en/api/stats",
