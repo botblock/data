@@ -8,8 +8,8 @@
     "display": 1,
     "defunct": 0,
     "discord_only": 1,
-    "description": "We give you the availability to apply your bot and give your bot a page on our website. ",
-    "api_docs": null,
+    "description": "discord-botlist.eu offers a wide variety of bots for your personal needs. Find your bot today!",
+    "api_docs": "https://docs.discord-botlist.eu",
     "api_post": null,
     "api_field": null,
     "api_shard_id": null,
@@ -20,7 +20,7 @@
     "view_bot": "https://discord-botlist.eu/bots/:id",
     "bot_widget": null,
     "content": null,
-    "owners": "LPTP1#1234 (478473771678826496), Bendix#2395 (462340067864870923)",
+    "owners": "LPTP1#1234 (478473771678826496), Bendix#2395 (462340067864870923), Flamex#0001 (681424352599736327)",
     "discord": "https://discord.gg/tCJ3N6m",
     "features": [
         "has-ads-on-site",
@@ -31,6 +31,10 @@
         "custom-bot-website-link",
         "has-voting",
         "has-categories-or-tags",
-        "has-search"
+        "has-search",
+        "bot-resubmission",
+        "additional-bot-owners-editors",
+        "server-count-api",
+        "votes-sent-to-webhooks"
     ]
 }

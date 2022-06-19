@@ -6,7 +6,7 @@
     "icon": "https://cdn.discordapp.com/icons/439866052684283905/a_50718fbcb8030a76b775540db66bd0b8.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "A growing directory of Discord bots to enhance your server - Find the perfect bot for your needs and add it to your server easily, quickly and for free.",
     "api_docs": "https://docs.discord.boats/",

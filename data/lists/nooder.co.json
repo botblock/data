@@ -6,7 +6,7 @@
     "icon": "https://cdn.discordapp.com/icons/694596007861944350/1e256ff622d05610cd509a68c3e5575e.png",
     "language": "English",
     "display": 0,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": null,
     "api_docs": "https://nooder.co/api/docs",
