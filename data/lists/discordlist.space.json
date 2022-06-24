@@ -6,7 +6,7 @@
     "icon": "https://cdn.discordapp.com/icons/387812458661937152/70ec291cf1dcaa33f8c50d5b3333a521.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "Popular and feature-rich Discord bots",
     "api_docs": "https://docs.discordlist.space/",
