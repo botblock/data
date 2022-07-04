@@ -6,7 +6,7 @@
     "icon": "https://boatspace.xyz/cdn/img/boat.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "The best bot list on the internet! BoatSpace enables users to find the best bot for their Discord server fast, easily, and for free!",
     "api_docs": "https://docs.boatspace.xyz/",
