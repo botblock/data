@@ -3,12 +3,12 @@
     "added": 1626876034,
     "name": "Radar Bot Directory",
     "url": "https://radarbotdirectory.xyz/",
-    "icon": "https://mcfacts.xyz/Images/RBD/botlistlogo.png",
+    "icon": "https://radarbotdirectory.xyz/static/logo.png",
     "language": "English",
     "display": 1,
     "defunct": 0,
     "discord_only": 1,
-    "description": "Get the perfect bot for your server with our directory of discord bots",
+    "description": "You can make the perfect server by choosing the right bots",
     "api_docs": "https://docs.radarbotdirectory.xyz/",
     "api_post": "https://radarbotdirectory.xyz/api/bot/:id/stats",
     "api_field": "guilds",
@@ -35,6 +35,7 @@
         "has-search",
         "has-widget",
         "requires-owner-in-server",
-        "server-count-api"
+        "server-count-api",
+        "bot-reviews"
     ]
 }
