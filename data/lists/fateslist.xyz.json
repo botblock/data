@@ -5,7 +5,7 @@
     "url": "https://fateslist.xyz/",
     "icon": "https://api.fateslist.xyz/static/botlisticon.webp",
     "language": "English",
-    "display": 0,
+    "display": 1,
     "defunct": 1,
     "discord_only": 1,
     "description": "Find the best bots for your servers.",
