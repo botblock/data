@@ -5,7 +5,7 @@
     "url": "https://discord.rovelstars.com",
     "icon": "https://discord.rovelstars.com/assets/img/bot/logo.svg",
     "language": "English",
-    "display": 1,
+    "display": 0,
     "defunct": 0,
     "discord_only": 1,
     "description": "Imagine a place - where you get to find everything about discord! Ranging from bots, to users, servers, templates, banners, stickers and emojis!",
