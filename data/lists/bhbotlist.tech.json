@@ -26,7 +26,7 @@
         "bot-resubmission",
         "offers-paid-promotion",
         "unique bots",
-        "markdown-long-description",
+        "html-long-description",
         "certified-bot-vanity-urls",
         "custom-bot-github-link",
         "custom-bot-invite-link",
@@ -34,9 +34,7 @@
         "custom-bot-website-link",
         "discord-bot-support-link",
         "has-voting",
-        "votes-sent-to-webhooks",
         "has-categories-or-tags",
-        "has-mobile-support",
         "has-search",
         "server-count-api"
     ]
