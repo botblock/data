@@ -11,6 +11,7 @@
     "description": "Discover a lot of new Discord bots for free and without login ! we check your bot in less than 12h* ",
     "api_docs": "https://docs.bladelist.gg/",
     "api_post": "https://api.bladelist.gg/bots/:id",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": "shard_count",

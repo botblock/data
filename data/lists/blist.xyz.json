@@ -11,6 +11,7 @@
     "description": "The best bots ever conceived: by you and for you",
     "api_docs": "https://blist.xyz/docs/",
     "api_post": "https://blist.xyz/api/v2/bot/:id/stats",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": "shard_count",

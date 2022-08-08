@@ -11,6 +11,7 @@
     "description": "Find the best bots for your servers.",
     "api_docs": "https://docs.fateslist.xyz",
     "api_post": "https://api.fateslist.xyz/api/v2/bots/:id/stats",
+    "api_post_method": null,
     "api_field": "guild_count",
     "api_shard_id": null,
     "api_shard_count": "shard_count",

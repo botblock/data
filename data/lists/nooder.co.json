@@ -11,6 +11,7 @@
     "description": null,
     "api_docs": "https://nooder.co/api/docs",
     "api_post": "https://nooder.co/api/bot/:id/stats",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": null,

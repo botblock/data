@@ -11,6 +11,7 @@
     "description": null,
     "api_docs": "https://discordapps.dev/en-GB/posts/docs/api-v2/",
     "api_post": "https://api.discordapps.dev/api/v2/bots/:id",
+    "api_post_method": null,
     "api_field": "bot.count",
     "api_shard_id": null,
     "api_shard_count": null,

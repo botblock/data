@@ -11,6 +11,7 @@
     "description": null,
     "api_docs": "https://discordbot.world/docs",
     "api_post": "https://discordbot.world/api/bot/:id/stats",
+    "api_post_method": null,
     "api_field": "guild_count",
     "api_shard_id": null,
     "api_shard_count": null,

@@ -16,6 +16,7 @@
         "description",
         "api_docs",
         "api_post",
+        "api_post_method",
         "api_field",
         "api_shard_id",
         "api_shard_count",
@@ -122,6 +123,15 @@
             ],
             "title": "List API guild count POST endpoint",
             "description": "The endpoint URL for posting a bot's guild count to the list, if known, with `:id` as placeholder for bot Id."
+        },
+        "api_post_method": {
+            "$id": "#/properties/api_post_method",
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "List API guild count method to use",
+            "description": "The method to use for submitting a bot's guild count to the list via `api_post`."
         },
         "api_field": {
             "$id": "#/properties/api_field",

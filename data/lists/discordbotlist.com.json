@@ -11,6 +11,7 @@
     "description": null,
     "api_docs": "https://docs.discordbotlist.com",
     "api_post": "https://discordbotlist.com/api/v1/bots/:id/stats",
+    "api_post_method": null,
     "api_field": "guilds",
     "api_shard_id": "shard_id",
     "api_shard_count": null,

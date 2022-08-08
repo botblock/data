@@ -11,6 +11,7 @@
     "description": null,
     "api_docs": null,
     "api_post": null,
+    "api_post_method": null,
     "api_field": null,
     "api_shard_id": null,
     "api_shard_count": null,

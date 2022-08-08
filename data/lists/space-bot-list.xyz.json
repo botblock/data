@@ -11,6 +11,7 @@
     "description": "Space Bots List is botlist that you can find most of good bots, and learn from here how to make bot, with helpful staff",
     "api_docs": "https://spacebots.gitbook.io/tutorial-en/api/stats",
     "api_post": "https://space-bot-list.xyz/api/bots/:id",
+    "api_post_method": null,
     "api_field": "guilds",
     "api_shard_id": null,
     "api_shard_count": null,

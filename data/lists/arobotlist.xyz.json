@@ -11,6 +11,7 @@
     "description": "AroBotList is a growing directory of Discord bots to improve your server - Find the perfect bot for your needs and add it to your server easily, quickly and for free.",
     "api_docs": null,
     "api_post": null,
+    "api_post_method": null,
     "api_field": null,
     "api_shard_id": null,
     "api_shard_count": null,

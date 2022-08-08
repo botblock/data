@@ -11,6 +11,7 @@
     "description": "A new well-developed bot list from Vultrex Development. Here you can advertise your bot for free! ",
     "api_docs": "https://discordbots.co/api",
     "api_post": "https://api.discordbots.co/v1/public/bot/:id/stats",
+    "api_post_method": null,
     "api_field": "serverCount",
     "api_shard_id": null,
     "api_shard_count": "shardCount",

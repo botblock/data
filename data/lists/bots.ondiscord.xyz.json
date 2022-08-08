@@ -11,6 +11,7 @@
     "description": "Easily find and share Discord bots",
     "api_docs": "https://bots.ondiscord.xyz/info/api",
     "api_post": "https://bots.ondiscord.xyz/bot-api/bots/:id/guilds",
+    "api_post_method": null,
     "api_field": "guildCount",
     "api_shard_id": null,
     "api_shard_count": null,

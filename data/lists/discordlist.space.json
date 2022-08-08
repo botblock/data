@@ -11,6 +11,7 @@
     "description": "Popular and feature-rich Discord bots",
     "api_docs": "https://docs.discordlist.space/",
     "api_post": "https://api.discordlist.space/v2/bots/:id",
+    "api_post_method": null,
     "api_field": "serverCount",
     "api_shard_id": null,
     "api_shard_count": null,

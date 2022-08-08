@@ -11,6 +11,7 @@
     "description": "Advertise your Discord bot for free!",
     "api_docs": "https://docs.voidbots.net/",
     "api_post": "https://api.voidbots.net/bot/stats/:id",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": "shard_count",

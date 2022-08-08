@@ -11,6 +11,7 @@
     "description": "A growing directory of Discord bots to enhance your server - Find the perfect bot for your needs and add it to your server easily, quickly and for free.",
     "api_docs": "https://docs.discord.boats/",
     "api_post": "https://discord.boats/api/bot/:id",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": null,
