@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Discord Bot Support Link",
     "id": "discord-bot-support-link",
     "display": 3,

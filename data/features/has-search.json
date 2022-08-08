@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Has Search",
     "id": "has-search",
     "display": 0,

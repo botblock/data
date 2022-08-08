@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "voidbots.net",
     "added": 1602022304,
     "name": "Void Bots",

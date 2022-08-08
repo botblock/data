@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "ie.discordbots.co.uk",
     "added": 1544548984,
     "name": "Discord Fork for Internet Explorer 6",
