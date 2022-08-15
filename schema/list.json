@@ -121,8 +121,8 @@
                 "string",
                 "null"
             ],
-            "title": "List API guild count POST endpoint",
-            "description": "The endpoint URL for posting a bot's guild count to the list, if known, with `:id` as placeholder for bot Id."
+            "title": "List API guild count submission endpoint",
+            "description": "The endpoint URL for submitting a bot's guild count to the list, if known, with `:id` as placeholder for bot Id."
         },
         "api_post_method": {
             "$id": "#/properties/api_post_method",
@@ -130,8 +130,8 @@
                 "string",
                 "null"
             ],
-            "title": "List API guild count method to use",
-            "description": "The method to use for submitting a bot's guild count to the list via `api_post`."
+            "title": "List API guild count HTTP method",
+            "description": "The HTTP method to use for submitting a bot's guild count to the list via `api_post`. Defaults to `POST` if null."
         },
         "api_field": {
             "$id": "#/properties/api_field",
