@@ -361,6 +361,7 @@ paths:
                       description: The List
                       api_docs: https://thelist.org/api/docs
                       api_post: https://thelist.org/api/bot/:id
+                      api_post_method: null
                       api_field: server_count
                       api_shard_id: shard_id
                       api_shard_count: shard_count
@@ -456,6 +457,7 @@ paths:
                     description: The List
                     api_docs: https://thelist.org/api/docs
                     api_post: https://thelist.org/api/bot/:id
+                    api_post_method: null
                     api_field: server_count
                     api_shard_id: shard_id
                     api_shard_count: shard_count
@@ -601,6 +603,10 @@ components:
           description: The endpoint URL for posting a bot's guild count to the list, if known, with `:id` as placeholder for bot Id.
           type: string
           format: uri
+          nullable: true
+        api_post_method:
+          description: The HTTP method to use for submitting a bot's guild count to the list via `api_post`. Defaults to `POST` if null.
+          type: string
           nullable: true
         api_field:
           description: The field name for guild count when posting a bot's guild count to the list, if known.
