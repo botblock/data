@@ -1,0 +1,29 @@
+{
+    "id": "topiclist.xyz",
+    "added": 1533208495,
+    "name": "Topic Bot List",
+    "url": "topiclist.xyz",
+    "icon": "https://cdn.topiclist.xyz/images/png/TopicList5.png",
+    "language": "English",
+    "display": 1,
+    "defunct": 0,
+    "discord_only": 1,
+    "description": null,
+    "api_docs": "https://docs.topiclist.xyz",
+    "api_post": "https://api.topiclist.xyz/v1/bot/:id.html",
+    "api_field": "serveurs",
+    "api_shard_id": null,
+    "api_shard_count": "shards",
+    "api_shards": null,
+    "api_all": null,
+    "view_bot": "https://topiclist.xyz/",
+    "bot_widget": null,
+    "content": null,
+    "owners": "ZeroTwo#9568 (899722893603274793),ranveersoni#1894 (787241442770419722)",
+    "discord": "https://discord.gg/Jad6TcdEet",
+    "features": [
+        "has-mobile-support",
+        "has-server-list",
+        "has-good-widget"
+    ]
+}
