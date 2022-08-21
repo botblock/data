@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Bot Resubmission",
     "id": "bot-resubmission",
     "display": 69,

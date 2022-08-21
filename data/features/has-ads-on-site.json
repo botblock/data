@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Has Ads on Site",
     "id": "has-ads-on-site",
     "display": 5,

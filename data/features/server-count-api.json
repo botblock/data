@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Server Count API",
     "id": "server-count-api",
     "display": 0,

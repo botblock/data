@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Voting Data Exposed",
     "id": "voting-data-exposed",
     "display": 2,

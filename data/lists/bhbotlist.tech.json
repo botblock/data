@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "bhbotlist.tech",
     "added": 1660331331,
     "name": "BHbotlist",
