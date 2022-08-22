@@ -12,6 +12,7 @@
     "description": "Polish discord bots and servers list",
     "api_docs": "https://docs.dblista.pl/",
     "api_post": null,
+    "api_post_method": null,
     "api_field": null,
     "api_shard_id": null,
     "api_shard_count": null,

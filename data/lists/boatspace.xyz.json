@@ -12,6 +12,7 @@
     "description": "The best bot list on the internet! BoatSpace enables users to find the best bot for their Discord server fast, easily, and for free!",
     "api_docs": "https://docs.boatspace.xyz/",
     "api_post": "https://boatspace.xyz/api/bots/:id",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": "shard_count",

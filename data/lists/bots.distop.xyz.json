@@ -12,6 +12,7 @@
     "description": "DisTop is the best Discord Bot List for finding the Discord bots that fit your server.",
     "api_docs": "https://docs.distop.xyz/",
     "api_post": "https://bots.distop.xyz/update/:id",
+    "api_post_method": null,
     "api_field": "guild_count",
     "api_shard_id": null,
     "api_shard_count": null,

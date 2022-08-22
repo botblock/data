@@ -12,6 +12,7 @@
     "description": "A brand new botlist that aims to deliver the best experience for its users and bot developers with unique features and tools.",
     "api_docs": "https://discordservices.net/docs/api",
     "api_post": "https://api.discordservices.net/bot/:id/stats",
+    "api_post_method": null,
     "api_field": "servers",
     "api_shard_id": null,
     "api_shard_count": "shards",

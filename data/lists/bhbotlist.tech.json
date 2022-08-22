@@ -12,6 +12,7 @@
     "description": "Spice up your Discord experience with our diverse range of Discord bots",
     "api_docs": "https://docs.bhbotlist.tech/",
     "api_post": "https://api.bhbotlist.tech/bot/:id",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": "shard_count",

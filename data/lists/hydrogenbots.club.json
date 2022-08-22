@@ -12,6 +12,7 @@
     "description": "A modern bot list designed for your bot(s) to grow.",
     "api_docs": "https://api.hydrogenbots.club/",
     "api_post": "https://hydrogenbots.club/api/v1/servercount",
+    "api_post_method": null,
     "api_field": "guild",
     "api_shard_id": null,
     "api_shard_count": "shard",

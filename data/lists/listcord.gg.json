@@ -12,6 +12,7 @@
     "description": "Listcord is a brand new botlist where you can add and find great bots!",
     "api_docs": "https://listcord.gg/docs",
     "api_post": "https://listcord.gg/api/bot/:id/stats",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": null,

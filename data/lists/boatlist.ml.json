@@ -12,6 +12,7 @@
     "description": null,
     "api_docs": null,
     "api_post": "https://boatlist.ml/api/bots/:id/stats",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": null,

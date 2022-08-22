@@ -12,6 +12,7 @@
     "description": null,
     "api_docs": "https://discord.bots.gg/docs",
     "api_post": "https://discord.bots.gg/api/v1/bots/:id/stats",
+    "api_post_method": null,
     "api_field": "guildCount",
     "api_shard_id": "shardId",
     "api_shard_count": "shardCount",

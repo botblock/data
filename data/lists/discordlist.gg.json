@@ -12,6 +12,7 @@
     "description": "Your place to find Discord Bots & Servers",
     "api_docs": "https://api.discordlist.gg/developers",
     "api_post": "https://api.discordlist.gg/v0/bots/:id/guilds",
+    "api_post_method": "PUT",
     "api_field": "count",
     "api_shard_id": null,
     "api_shard_count": null,

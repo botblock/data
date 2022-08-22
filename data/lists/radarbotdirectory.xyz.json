@@ -12,6 +12,7 @@
     "description": "You can make the perfect server by choosing the right bots",
     "api_docs": "https://docs.radarbotdirectory.xyz/",
     "api_post": "https://radarbotdirectory.xyz/api/bot/:id/stats",
+    "api_post_method": null,
     "api_field": "guilds",
     "api_shard_id": null,
     "api_shard_count": "shards",

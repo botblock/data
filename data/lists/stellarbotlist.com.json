@@ -12,6 +12,7 @@
     "description": "Stellar Bot List is a Discord Bots referencer allowing you to find the bot of your dreams or increase its visibility",
     "api_docs": null,
     "api_post": null,
+    "api_post_method": null,
     "api_field": null,
     "api_shard_id": null,
     "api_shard_count": null,

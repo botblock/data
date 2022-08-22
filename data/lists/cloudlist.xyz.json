@@ -12,6 +12,7 @@
     "description": "Looking for that perfect Discord Bot? Start promoting your bot to discord and get more users. Cloud Bot List is an online page where discord users can post their bots for free and start gaining more users.",
     "api_docs": "https://www.cloudlist.xyz/apidocs",
     "api_post": "https://www.cloudlist.xyz/api/stats/:id",
+    "api_post_method": null,
     "api_field": "count",
     "api_shard_id": null,
     "api_shard_count": null,

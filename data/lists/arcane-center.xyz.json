@@ -12,6 +12,7 @@
     "description": "Discover hundreds of Discord bots and add your own to make it popular",
     "api_docs": "https://arcane-center.xyz/documentation",
     "api_post": "https://arcane-center.xyz/api/:id/stats",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": "shard_count",

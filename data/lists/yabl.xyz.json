@@ -12,6 +12,7 @@
     "description": null,
     "api_docs": "https://yabl.xyz/api",
     "api_post": "https://yabl.xyz/api/bot/:id/stats",
+    "api_post_method": null,
     "api_field": "guildCount",
     "api_shard_id": null,
     "api_shard_count": null,

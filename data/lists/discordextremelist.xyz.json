@@ -12,6 +12,7 @@
     "description": "Discord's unbiased list, giving small bots and small servers a big chance!",
     "api_docs": "https://discordextremelist.xyz/docs#api-routes",
     "api_post": "https://api.discordextremelist.xyz/v2/bot/:id/stats",
+    "api_post_method": null,
     "api_field": "guildCount",
     "api_shard_id": null,
     "api_shard_count": "shardCount",

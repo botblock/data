@@ -12,6 +12,7 @@
     "description": "Infinity Bot List, Search your favourite bot for an exciting start to your server.",
     "api_docs": "https://docs.infinitybotlist.com/",
     "api_post": "https://api.infinitybotlist.com/bots/stats",
+    "api_post_method": null,
     "api_field": "servers",
     "api_shard_id": null,
     "api_shard_count": "shards",

@@ -12,6 +12,7 @@
     "description": "Spice up your discord experience with our range of bots and servers!",
     "api_docs": "https://docs.discordz.gg",
     "api_post": "https://api.discordz.gg/bot/stats/:id",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": "shard_count",

@@ -12,6 +12,7 @@
     "description": "Browse through thousands of Discord Bots from your phone! Download now on the Google Play Store and Apple App Store.",
     "api_docs": null,
     "api_post": null,
+    "api_post_method": null,
     "api_field": null,
     "api_shard_id": null,
     "api_shard_count": null,

@@ -12,6 +12,7 @@
     "description": null,
     "api_docs": "https://apollos.gitbook.io/cloud-botlist/",
     "api_post": "https://cloud-botlist.xyz/api/bots/:id",
+    "api_post_method": null,
     "api_field": "guilds",
     "api_shard_id": null,
     "api_shard_count": null,
