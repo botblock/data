@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Has Certification Program",
     "id": "has-certification-program",
     "display": 0,

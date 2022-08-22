@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Has Widget",
     "id": "has-widget",
     "display": 0,

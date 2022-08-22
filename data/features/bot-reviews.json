@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Bot Reviews",
     "id": "bot-reviews",
     "display": 45,

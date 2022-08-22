@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "listcord.gg",
     "added": 1627220584,
     "name": "Listcord",

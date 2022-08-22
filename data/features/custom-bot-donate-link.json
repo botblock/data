@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Custom Bot Donate Link",
     "id": "custom-bot-donate-link",
     "display": 3,

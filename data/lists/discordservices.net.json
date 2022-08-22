@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "discordservices.net",
     "added": 1620045981,
     "name": "Discord Services",

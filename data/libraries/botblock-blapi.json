@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/library.json",
     "repo": "botblock/BLAPI",
     "language": "Javascript",
     "name": "BLAPI",
