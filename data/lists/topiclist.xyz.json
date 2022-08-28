@@ -23,10 +23,8 @@
     "discord": "https://discord.gg/Jad6TcdEet",
     "features": [
         "bot-resubmission",
-        "has-ads-on-site",
         "has-server-list",
         "has-good-widget",
-        "discord-bot-support-link",
         "has-widget",
         "requires-owner-in-server",
         "server-count-api"
