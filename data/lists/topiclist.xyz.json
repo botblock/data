@@ -14,7 +14,7 @@
     "api_shard_id": null,
     "api_shard_count": "shards",
     "api_shards": null,
-    "api_get": "https://topiclist.xyz/api/bots/:botID",
+    "api_get": "https://topiclist.xyz/api/bots/:id",
     "api_all": "https://api.topiclist.xyz/bots",
     "view_bot": "https://topiclist.xyz/bot/:id",
     "bot_widget": "https://topiclist.xyz/widget/bot/:id",
