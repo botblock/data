@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "cloud-botlist.xyz",
     "added": 1577741636,
     "name": "Cloud Botlist",
@@ -11,6 +12,7 @@
     "description": null,
     "api_docs": "https://apollos.gitbook.io/cloud-botlist/",
     "api_post": "https://cloud-botlist.xyz/api/bots/:id",
+    "api_post_method": null,
     "api_field": "guilds",
     "api_shard_id": null,
     "api_shard_count": null,

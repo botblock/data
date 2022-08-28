@@ -1,4 +1,5 @@
 {
+    "$schema": "../schema/legacy.json",
     "vultrex.io": "discordbots.co",
     "space-bot-list.org": "space-bot-list.xyz",
     "mythicalbots.xyz": "bots.idledev.org",

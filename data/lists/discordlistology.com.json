@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "discordlistology.com",
     "added": 1592468886,
     "name": "Discordlistology",
@@ -11,6 +12,7 @@
     "description": "Start listing your Discord bots & servers for free!",
     "api_docs": "https://discordlistology.com/developer/documentation",
     "api_post": "https://discordlistology.com/api/v1/bots/:id/stats",
+    "api_post_method": null,
     "api_field": "servers",
     "api_shard_id": null,
     "api_shard_count": "shards",

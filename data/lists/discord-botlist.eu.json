@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "discord-botlist.eu",
     "added": 1604313880,
     "name": "Discord Bot List",
@@ -11,6 +12,7 @@
     "description": "discord-botlist.eu offers a wide variety of bots for your personal needs. Find your bot today!",
     "api_docs": "https://docs.discord-botlist.eu",
     "api_post": null,
+    "api_post_method": null,
     "api_field": null,
     "api_shard_id": null,
     "api_shard_count": null,

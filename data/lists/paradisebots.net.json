@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "paradisebots.net",
     "added": 1612530937,
     "name": "Paradise Bot List",
@@ -11,6 +12,7 @@
     "description": "The Discord Bot List that strives to provide all Discord Bots & Bot Devs With a little bit of Advertising Freedom!!",
     "api_docs": "https://docs.paradisebots.net/",
     "api_post": "https://paradisebots.net/api/v1/bot/:id",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": "shard_count",

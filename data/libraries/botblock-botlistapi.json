@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/library.json",
     "repo": "botblock/BotListAPI",
     "language": "C#",
     "name": "BotListAPI",

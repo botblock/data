@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "botsdatabase.com",
     "added": 1590063628,
     "name": "BotsDataBase",
@@ -11,6 +12,7 @@
     "description": "Search hundreds of thousands of bots, make your server better with our certified bots.",
     "api_docs": "https://docs.botsdatabase.com/",
     "api_post": "https://api.botsdatabase.com/v1/bots/:id",
+    "api_post_method": null,
     "api_field": "servers",
     "api_shard_id": null,
     "api_shard_count": null,

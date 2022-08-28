@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "botlist.me",
     "added": 1626875717,
     "name": "Botlist.me",
@@ -11,6 +12,7 @@
     "description": "Finding the best bots for your discord server is just one click away!",
     "api_docs": "https://docs.botlist.me/",
     "api_post": "https://api.botlist.me/api/v1/bots/:id/stats",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": "shard_count",

@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Has Mobile Support",
     "id": "has-mobile-support",
     "display": 0,

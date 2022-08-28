@@ -1,6 +1,15 @@
 const { join } = require('path');
 const { loadInvalidJsonFiles, loadJson, validateJsonFiles, loadValidJsonFiles } = require('./util');
 
+const expectSchemas = (singular, plural) =>
+    async () => {
+        const schema = `../../schema/${singular}.json`;
+        const files = await loadValidJsonFiles(join(__dirname, '..', 'data', plural));
+        const unprovided = files.filter(({ data }) => data['$schema'] !== schema);
+
+        expect(unprovided).toEqual([]);
+    };
+
 describe('legacy data', () => {
     test('is a valid json file', async () => {
         // Get invalid json files
@@ -37,10 +46,22 @@ describe('legacy data', () => {
         const lists = listsFiles.map(({ data }) => data.id);
 
         // Get non-existent lists
-        const missing = Object.values(files[0].data).filter(id => !lists.includes(id));
+        const missing = Object.values(files[0].data).filter(
+            id => !lists.includes(id) && id !== '../schema/legacy.json'
+        );
 
         // Expect no missing lists
         expect(missing).toEqual([]);
+    });
+
+    // special-case
+    test('contains $schema', async () => {
+        const files = await loadValidJsonFiles(join(__dirname, '..', 'data'))
+            .then(valid => valid.filter(({ file }) => file === 'legacy.json'));
+
+        const unprovided = files.filter(({ data }) => data['$schema'] !== '../schema/legacy.json');
+
+        expect(unprovided).toEqual([]);
     });
 });
 
@@ -75,6 +96,8 @@ describe('features data', () => {
         // Expect no mis-matches
         expect(mismatches).toEqual([]);
     });
+
+    test('contains $schema', expectSchemas('feature', 'features'));
 });
 
 describe('libraries data', () => {
@@ -109,6 +132,8 @@ describe('libraries data', () => {
         // Expect no mis-matches
         expect(mismatches).toEqual([]);
     });
+
+    test('contains $schema', expectSchemas('library', 'libraries'));
 });
 
 describe('lists data', () => {
@@ -157,4 +182,6 @@ describe('lists data', () => {
         // Expect no errors
         expect(failures).toEqual([]);
     });
+
+    test('contains $schema', expectSchemas('list', 'lists'));
 });

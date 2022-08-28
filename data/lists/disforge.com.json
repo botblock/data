@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "disforge.com",
     "added": 1601751697,
     "name": "Disforge",
@@ -11,6 +12,7 @@
     "description": "Explore thousands of Discord servers & Bots on Disforge.",
     "api_docs": "https://disforge.com/developer",
     "api_post": "https://disforge.com/api/botstats/:id",
+    "api_post_method": null,
     "api_field": "servers",
     "api_shard_id": null,
     "api_shard_count": null,

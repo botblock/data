@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "bots.idledev.org",
     "added": 1554996077,
     "name": "Idle Bot List",
@@ -11,6 +12,7 @@
     "description": null,
     "api_docs": null,
     "api_post": "https://bots.idledev.org/api/bot/:id/stats",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": null,

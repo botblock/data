@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "discordbotindex.com",
     "added": 1539030775,
     "name": "Discord Bot Index",
@@ -11,6 +12,7 @@
     "description": null,
     "api_docs": "https://discordbotindex.com/documentation",
     "api_post": "https://discordbotindex.com/apiv1/bot/:id",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": null,

@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Has Categories or Tags",
     "id": "has-categories-or-tags",
     "display": 0,

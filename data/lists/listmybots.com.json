@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "listmybots.com",
     "added": 1581886764,
     "name": "ListMyBots",
@@ -11,6 +12,7 @@
     "description": "The bot list that accepts in 24 hours",
     "api_docs": null,
     "api_post": null,
+    "api_post_method": null,
     "api_field": null,
     "api_shard_id": null,
     "api_shard_count": null,

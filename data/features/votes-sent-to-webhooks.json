@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Votes sent to Webhooks",
     "id": "votes-sent-to-webhooks",
     "display": 2,

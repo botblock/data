@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": " Site Internationalisation Support",
     "id": "site-internationalisation-support",
     "display": 5,

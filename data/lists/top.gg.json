@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "top.gg",
     "added": 1532965633,
     "name": "Discord Bot List",
@@ -11,6 +12,7 @@
     "description": null,
     "api_docs": "https://top.gg/api/docs",
     "api_post": "https://top.gg/api/bots/:id/stats",
+    "api_post_method": null,
     "api_field": "server_count",
     "api_shard_id": "shard_id",
     "api_shard_count": "shard_count",

@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "wonderbotlist.com",
     "added": 1533208489,
     "name": "Wonder Bot List",
@@ -11,6 +12,7 @@
     "description": null,
     "api_docs": "https://api.wonderbotlist.com/en/",
     "api_post": "https://api.wonderbotlist.com/v1/bot/:id",
+    "api_post_method": null,
     "api_field": "serveurs",
     "api_shard_id": null,
     "api_shard_count": "shards",
