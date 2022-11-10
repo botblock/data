@@ -43,7 +43,12 @@
         "html-long-description",
         "iframe-long-description",
         "offers-paid-promotion",
+        "has-mobile-support",
         "requires-owner-in-server",
-        "server-count-api"
+        "server-count-api",
+        "votes-sent-to-webhooks",
+        "vanity-urls-for-all",
+        "site-internationalisation-support",
+        
     ]
 }
