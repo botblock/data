@@ -39,7 +39,6 @@
         "votes-sent-to-webhooks",
         "has-categories-or-tags",
         "has-mobile-support",
-        "has-search",
         "server-count-api"
     ]
 }
