@@ -10,7 +10,7 @@
     "defunct": 0,
     "discord_only": 1,
     "description": "Search our vast list of bots for an exciting start to your Discord Server.",
-    "api_docs": "https://docs.infinitybotlist.com/",
+    "api_docs": "https://api.infinitybots.gg/docs",
     "api_post": "https://api.infinitybots.gg/bots/stats",
     "api_post_method": null,
     "api_field": "servers",
