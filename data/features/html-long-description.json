@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "HTML Long Description",
     "id": "html-long-description",
     "display": 4,

@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "motiondevelopment.top",
     "added": 1626876619,
     "name": "Motion Botlist",
@@ -11,6 +12,7 @@
     "description": "This is a botlist for you to find the perfect bots for your discord community!",
     "api_docs": "https://www.motiondevelopment.top/docs/api/intro",
     "api_post": "https://www.motiondevelopment.top/api/bots/:id/stats",
+    "api_post_method": null,
     "api_field": "guilds",
     "api_shard_id": null,
     "api_shard_count": null,

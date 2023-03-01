@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "radarcord.net",
     "added": 1626876034,
     "name": "Radarcord",
@@ -11,6 +12,7 @@
     "description": "Get the perfect bot for your server with our directory of discord bots",
     "api_docs": "https://docs.radarcord.net",
     "api_post": "https://radarcord.net/api/bot/:id/stats",
+    "api_post_method": null,
     "api_field": "guilds",
     "api_shard_id": null,
     "api_shard_count": "shards",
@@ -35,6 +37,7 @@
         "has-search",
         "has-widget",
         "requires-owner-in-server",
-        "server-count-api"
+        "server-count-api",
+        "bot-reviews"
     ]
 }

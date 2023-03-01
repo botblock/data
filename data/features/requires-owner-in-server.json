@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Requires Owner in Server",
     "id": "requires-owner-in-server",
     "display": 0,

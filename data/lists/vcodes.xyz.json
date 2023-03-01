@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "vcodes.xyz",
     "added": 1626876913,
     "name": "vCodes",
@@ -11,6 +12,7 @@
     "description": "Don't you want to expand and improve your Discord bot? Here vCodes are here for you!",
     "api_docs": "https://docs.vcodes.xyz/",
     "api_post": "https://vcodes.xyz/api/bots/stats",
+    "api_post_method": null,
     "api_field": "serverCount",
     "api_shard_id": null,
     "api_shard_count": "shardCount",

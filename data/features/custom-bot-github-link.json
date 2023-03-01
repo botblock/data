@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Custom Bot GitHub Link",
     "id": "custom-bot-github-link",
     "display": 3,

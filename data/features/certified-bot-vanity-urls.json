@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/feature.json",
     "name": "Certified Bot Vanity URLs",
     "id": "certified-bot-vanity-urls",
     "display": 3,

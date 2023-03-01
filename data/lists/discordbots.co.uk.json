@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "discordbots.co.uk",
     "added": 1532965633,
     "name": "Discord Fork",
@@ -11,6 +12,7 @@
     "description": null,
     "api_docs": "https://discordbots.co.uk/docs/api-reference",
     "api_post": null,
+    "api_post_method": null,
     "api_field": null,
     "api_shard_id": null,
     "api_shard_count": null,

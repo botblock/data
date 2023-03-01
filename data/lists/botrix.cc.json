@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/list.json",
     "id": "botrix.cc",
     "added": 1610888213,
     "name": "Botrix",
@@ -11,6 +12,7 @@
     "description": "Botrix is the new generation of discord listing, grow your bot or community faster than ever with our revolutionary algorithms to help even the smallest of services.",
     "api_docs": "https://docs.botrix.cc/",
     "api_post": "https://botrix.cc/api/v1/bot/:id",
+    "api_post_method": null,
     "api_field": "servers",
     "api_shard_id": null,
     "api_shard_count": "shards",

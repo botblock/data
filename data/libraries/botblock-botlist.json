@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schema/library.json",
     "repo": "botblock/BotList",
     "language": "Javascript",
     "name": "BotList",
