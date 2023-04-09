@@ -40,6 +40,6 @@
         "requires-owner-in-server",
         "server-count-api",
         "site-internationalisation-support",
-        "iframe-long-description",
+        "iframe-long-description"
     ]
 }
