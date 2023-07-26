@@ -47,7 +47,6 @@
         "has-mobile-support",
         "has-search",
         "has-widget",
-        "requires-owner-in-server",
         "server-count-api"
     ]
 }
