@@ -7,7 +7,7 @@
     "icon": "https://cdn.discordapp.com/icons/112319935652298752/633a48b3446045ceed222a32622a9dbd.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": null,
     "api_docs": null,
