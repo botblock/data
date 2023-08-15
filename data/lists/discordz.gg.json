@@ -7,7 +7,7 @@
     "icon": "https://cdn.discordz.gg/img/logo.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "Spice up your discord experience with our range of bots and servers!",
     "api_docs": "https://docs.discordz.gg",
