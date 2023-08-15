@@ -7,7 +7,7 @@
     "icon": "https://cdn.discordapp.com/icons/608711879858192479/a_d25bd6131772dd5f7018ffb8951f115c.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "Bump up your servers's street cred by finding some great bots here!",
     "api_docs": "https://docs.discordlabs.org/",
