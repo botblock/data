@@ -7,7 +7,7 @@
     "icon": "https://cdn.discordapp.com/icons/645281161949741064/fad8d2e250d653f180a547f728273f5a.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "Discover a lot of new Discord bots for free and without login ! we check your bot in less than 12h* ",
     "api_docs": "https://docs.bladelist.gg/",
