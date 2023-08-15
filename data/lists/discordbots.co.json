@@ -7,7 +7,7 @@
     "icon": "https://discordbots.co/favicon.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "A new well-developed bot list from Vultrex Development. Here you can advertise your bot for free! ",
     "api_docs": "https://discordbots.co/api",
