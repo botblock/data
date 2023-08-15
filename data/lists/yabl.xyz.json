@@ -7,7 +7,7 @@
     "icon": "https://i.imgur.com/OFiMern.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": null,
     "api_docs": "https://yabl.xyz/api",
