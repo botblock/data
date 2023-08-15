@@ -7,7 +7,7 @@
     "icon": "https://cdn.discordapp.com/icons/446425626988249089/c9599b1e0fdb902b81d93468ada512cf.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "Easily find and share Discord bots",
     "api_docs": "https://bots.ondiscord.xyz/info/api",
