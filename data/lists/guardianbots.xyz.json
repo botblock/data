@@ -8,7 +8,7 @@
     "language": "English",
     "display": 1,
     "defunct": 0,
-    "discord_only": 0,
+    "discord_only": 1,
     "description": "Discover hundreds of Discord bots and add your own to make it popular",
     "api_docs": null,
     "api_post": null,
