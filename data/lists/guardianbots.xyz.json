@@ -23,7 +23,7 @@
     "bot_widget": null,
     "content": null,
     "owners": "@whatisyourname.#0000 (878850717706756116)",
-    "discord": "",
+    "discord": null,
     "features": [
         "markdown-long-description",
         "custom-bot-invite-link",
