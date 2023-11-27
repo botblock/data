@@ -7,7 +7,7 @@
     "icon": "https://pbs.twimg.com/app_img/834705925562851330/CjvLy-YN?format=png&name=73x73",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 0,
     "description": null,
     "api_docs": null,

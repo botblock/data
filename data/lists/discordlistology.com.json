@@ -7,7 +7,7 @@
     "icon": "https://cdn.discordapp.com/icons/658262945234681856/e0a8d8ff2b3d27c0c76893a1ba40d571.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "Start listing your Discord bots & servers for free!",
     "api_docs": "https://discordlistology.com/developer/documentation",

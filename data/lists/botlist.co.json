@@ -7,7 +7,7 @@
     "icon": "https://botlist.co/images/BotList_logo.svg",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 0,
     "description": null,
     "api_docs": null,

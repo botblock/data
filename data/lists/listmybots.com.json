@@ -7,7 +7,7 @@
     "icon": "https://cdn.discordapp.com/attachments/581452385596080128/581945277435478026/listmybots2.png",
     "language": "English",
     "display": 0,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "The bot list that accepts in 24 hours",
     "api_docs": null,

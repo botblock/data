@@ -7,7 +7,7 @@
     "icon": "https://cdn.discordapp.com/icons/501017909389295616/b612c45b809314e5e362dd8fa87bb3ac.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": null,
     "api_docs": "https://api.wonderbotlist.com/en/",
@@ -24,7 +24,5 @@
     "content": null,
     "owners": "Ten-No-Kami-Sama#7777 (193090359700619264), `${DoctaEnkoda++}`#2311 (160868823887511552), NaelleOwska#1786 (359767845762236436)",
     "discord": "https://discord.gg/yaS9krd",
-    "features": [
-        "has-mobile-support"
-    ]
+    "features": ["has-mobile-support"]
 }

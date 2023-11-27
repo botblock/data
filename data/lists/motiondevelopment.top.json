@@ -7,7 +7,7 @@
     "icon": "https://cdn.discordapp.com/icons/681203273776103527/4ad127573b9fa378375b809379baa981.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "This is a botlist for you to find the perfect bots for your discord community!",
     "api_docs": "https://www.motiondevelopment.top/docs/api/intro",
