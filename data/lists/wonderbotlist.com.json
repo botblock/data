@@ -24,5 +24,7 @@
     "content": null,
     "owners": "Ten-No-Kami-Sama#7777 (193090359700619264), `${DoctaEnkoda++}`#2311 (160868823887511552), NaelleOwska#1786 (359767845762236436)",
     "discord": "https://discord.gg/yaS9krd",
-    "features": ["has-mobile-support"]
+    "features": [
+        "has-mobile-support"
+    ]
 }

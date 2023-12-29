@@ -24,5 +24,8 @@
     "content": null,
     "owners": "Carbonitex [Matt]#0001 (68396159596503040), jet#9999 (228290260239515649)",
     "discord": "https://discord.gg/J2evbZB",
-    "features": ["additional-bot-owners-editors", "has-mobile-support"]
+    "features": [
+        "additional-bot-owners-editors",
+        "has-mobile-support"
+    ]
 }
