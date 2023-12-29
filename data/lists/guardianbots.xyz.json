@@ -25,11 +25,26 @@
     "owners": "@whatisyourname.#0000 (878850717706756116)",
     "discord": null,
     "features": [
-        "markdown-long-description",
+        "bot-internationalisation-support",
+        "bot-reviews",
         "custom-bot-invite-link",
+        "custom-bot-support-link",
         "custom-bot-website-link",
-        "voting-data-exposed",
+        "discord-bot-support-link",
         "has-categories-or-tags",
-        "requires-owner-in-server"
+        "has-certification-program",
+        "has-mobile-support",
+        "has-search",
+        "has-voting",
+        "has-widget",
+        "html-long-description",
+        "iframe-long-description",
+        "markdown-long-description",
+        "offers-paid-promotion",
+        "requires-owner-in-server",
+        "server-count-api",
+        "vanity-urls-for-all",
+        "votes-sent-to-webhooks",
+        "voting-data-exposed"
     ]
 }
