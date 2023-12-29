@@ -7,7 +7,7 @@
     "icon": "https://blist.xyz/main_site/staticfiles/main/assets/blist.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "The best bots ever conceived: by you and for you",
     "api_docs": "https://blist.xyz/docs/",

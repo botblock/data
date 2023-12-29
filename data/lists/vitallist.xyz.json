@@ -7,7 +7,7 @@
     "icon": "https://vitallist.xyz/img/icon.webp",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "A place where you can find Discord bots, Vital List.|",
     "api_docs": "https://vitallist.xyz/docs/",
