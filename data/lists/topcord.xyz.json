@@ -7,7 +7,7 @@
     "icon": "https://topcord.xyz/logo.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 0,
     "description": "TopCord is the best Discord Bot List for finding the Discord bots that suit your server.",
     "api_docs": "https://docs.topcord.xyz/#/",
