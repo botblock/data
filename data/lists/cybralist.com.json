@@ -22,7 +22,7 @@
     "view_bot": "https://cybralist.com/bots/:id",
     "bot_widget": "https://api.cybralist.com/bots/:id/embed",
     "content": null,
-    "owners": "cybrancee (327075863957078026)",
+    "owners": "cybrancee#0000 (327075863957078026)",
     "discord": "https://discord.gg/cybrancee",
     "features": [
         "additional-bot-owners-editors",
