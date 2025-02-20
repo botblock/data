@@ -39,6 +39,7 @@
         "offers-paid-promotion",
         "requires-owner-in-server",
         "votes-sent-to-webhooks",
-        "voting-data-exposed"
+        "voting-data-exposed",
+        "iframe-long-description"
     ]
 }
