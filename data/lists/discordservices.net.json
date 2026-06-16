@@ -7,7 +7,7 @@
     "icon": "https://discordservices.net/icon.png",
     "language": "English",
     "display": 1,
-    "defunct": 0,
+    "defunct": 1,
     "discord_only": 1,
     "description": "A brand new botlist that aims to deliver the best experience for its users and bot developers with unique features and tools.",
     "api_docs": "https://discordservices.net/docs/api",
