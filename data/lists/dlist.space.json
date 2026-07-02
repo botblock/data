@@ -16,7 +16,7 @@
     "api_field": "server_count",
     "api_shard_id": null,
     "api_shard_count": "shard_count",
-    "api_shards": null",
+    "api_shards": null,
     "api_get": "https://api.dlist.space/api/bot/:id",
     "api_all": null,
     "view_bot": "https://dlist.space/bot/:id",
