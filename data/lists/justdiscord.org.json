@@ -18,7 +18,7 @@
     "api_shard_count": "shard_count",
     "api_shards": "shards",
     "api_get": null,
-    "api_all": "https://justdiscord.org/api/v1/listings?kind=bot",
+    "api_all": null,
     "view_bot": "https://justdiscord.org/bots/:id",
     "bot_widget": null,
     "content": null,
