@@ -5,7 +5,7 @@
     "name": "JustDiscord",
     "url": "https://justdiscord.org/",
     "icon": "https://justdiscord.org/icon.png",
-    "language": "English, French, German, Spanish, Portuguese, Italian, Dutch, Polish, Czech, Swedish, Ukrainian, Russian, Turkish, Hindi, Indonesian, Vietnamese, Thai, Chinese, Japanese & Korean",
+    "language": "English",
     "display": 1,
     "defunct": 0,
     "discord_only": 1,
@@ -22,7 +22,7 @@
     "view_bot": "https://justdiscord.org/bots/:id",
     "bot_widget": null,
     "content": null,
-    "owners": null,
+    "owners": "umutxyp#0000 (518341959765458985)",
     "discord": "https://discord.gg/8pK4aMymxr",
     "features": [
         "bot-resubmission",
