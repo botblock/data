@@ -21,7 +21,7 @@
     "api_all": "https://spider.omniplex.gg/bots/@all",
     "view_bot": "https://omniplex.gg/bots/:id",
     "bot_widget": "https://omniplex.gg/bots/:id/widget",
-    "content": "Update: website is under active development",
+    "content": null,
     "owners": "codemeapixel#0000 (510065483693817867)",
     "discord": "https://discord.gg/infinity-bot-list-758641373074423808",
     "features": [
