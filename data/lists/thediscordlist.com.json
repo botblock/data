@@ -3,7 +3,7 @@
     "id": "thediscordlist.com",
     "added": 1790873975,
     "name": "TheDiscordList",
-    "url": "https://thediscordlist.com/",
+    "url": "https://thediscordlist.com/bots",
     "icon": "https://thediscordlist.com/apple-touch-icon.png",
     "language": "English, German, Spanish, French, Japanese, Korean, Dutch, Portuguese",
     "display": 1,
@@ -22,7 +22,7 @@
     "view_bot": "https://thediscordlist.com/bots/:id",
     "bot_widget": null,
     "content": null,
-    "owners": null,
+    "owners": "kyzegs#0000 (521078823891107861)",
     "discord": "https://discord.gg/yu2Z3sd3Av",
     "features": [
         "additional-bot-owners-editors",
